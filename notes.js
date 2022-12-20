@@ -2,3 +2,5 @@
 //Created by Jonas Schmedtmann
 
 //Start 20 december 2022
+
+// Done with preparetion
