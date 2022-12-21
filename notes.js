@@ -33,3 +33,17 @@ let children;
  */
 
 // One line comment
+
+
+// let, const, var
+
+// can change - use let
+
+// cannot cachge - use const
+
+// old version of variables - var
+
+
+start lessons 14!!!
+
+// Basic Operators

@@ -30,14 +30,7 @@ console.log(javascriptIsFun);
 console.log(typeof person);
 
 
+const ageDimas = 2023 - 1988;
+const ageKsu = 2023 - 1993;
 
-// let, const, var
-
-// can change - use let
-
-// cannot cachge - use const
-
-// old version of variables - var
-
-
-start lessons 14!!!
+console.log(ageDimas, ageKsu);
