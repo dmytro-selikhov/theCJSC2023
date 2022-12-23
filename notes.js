@@ -3,7 +3,7 @@
 
 //Start 20 december 2022
 
-// Prinitive Data Types:
+// Primitive Data Types:
 1. Number
 let age = 34;
 
