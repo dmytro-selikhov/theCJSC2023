@@ -184,7 +184,7 @@ if (language === 'english' && population < 50 && isIsland == false) {
 
 
 
-// page 8
+// Codding Challenge #1
 
 
 

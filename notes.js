@@ -77,12 +77,24 @@ console.log(x);
 // Comparison operators
 console.log(ageDima > ageKsu); // <, >, >=, <=
 console.log(ageKsu >= 18);
-
 const isFullAge = ageKsu >= 18;
-
 console.log(now - 1993 > now - 2018)
 
+// Operator Precedence
+const now = 2037;
+const ageDima = now - 1988;
+const ageKsu = now - 1993;
+
+console.log(now - 1993 > now - 2018);
 
 
+let x, y;
+
+x = y = 25 - 10 - 5;
+console.log(x, y);
+
+const averageAge = (ageDima + ageKsu) / 2;
+console.log(ageDima, ageKsu, averageAge);
 
 
+// lesson 16, Codding Challenge 
