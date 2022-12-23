@@ -99,13 +99,62 @@ if (population > 33) {
 /**
  * LECTURE: Type Conversion and Coercion
 1. Predicttheresultofthese5operationswithoutexecutingthem:
-     '9' - '5';
-     '19' - '13' + '17';
-     '19' - '13' + 17;
-     '123' < 57;
-     5 + 6 + '4' + 9 - 4 - 2;
+     '9' - '5'; //4
+     '19' - '13' + '17'; // '617'
+     '19' - '13' + 17; // 23
+     '123' < 57; // NAN
+     5 + 6 + '4' + 9 - 4 - 2; // 1143
 2. Executetheoperationstocheckifyouwereright
  */
+
+// Solution 
+'9' - '5'; //4
+'19' - '13' + '17'; // '617'
+'19' - '13' + 17; // 23
+'123' < 57; // false
+5 + 6 + '4' + 9 - 4 - 2; // 1143
+
+
+/**
+ * LECTURE: Equality Operators: == vs. ===
+1. Declareavariable'numNeighbours'basedonapromptinputlikethis: prompt('How many neighbour countries does your country have?');
+2. Ifthereisonly1neighbour,logtotheconsole'Only1border!'(uselooseequality == for now)
+3. Useanelse-ifblocktolog'Morethan1border'incase'numNeighbours' is greater than 1
+4. Useanelseblocktolog'Noborders'(thisblockwillbeexecutedwhen 'numNeighbours' is 0 or any other value)
+5. Testthecodewithdifferentvaluesof'numNeighbours',including1and0.
+6. Change==to===,andtestthecodeagain,withthesamevaluesof
+'numNeighbours'. Notice what happens when there is exactly 1 border! Why
+is this happening?
+7. Finally,convert'numNeighbours'toanumber,andwatchwhathappensnow
+when you input 1
+8. Reflectonwhyweshouldusethe===operatorandtypeconversioninthis
+situation
+ */
+
+// Solution
+
+let numNeighbours = prompt('How many neighbour countries does your country have?');
+numNeighbours = +numNeighbours;
+if (numNeighbours === 1) {
+  console.log('Only 1 border!');
+} else if (numNeighbours > 1) {
+  console.log('More than 1 border');
+} else if ((numNeighbours === 0)) {
+  console.log('No borders')
+}
+
+
+// page 7
+
+
+
+
+
+
+
+
+
+
 
 
 
