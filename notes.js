@@ -97,4 +97,25 @@ const averageAge = (ageDima + ageKsu) / 2;
 console.log(ageDima, ageKsu, averageAge);
 
 
-// lesson 16, Codding Challenge 
+// lesson 17
+
+const firstName = 'Dima';
+const job = 'sysAdm';
+const birthYear = 1988;
+const year = 2037;
+
+const dimas = "I'm " + firstName + ', a ' + (year - birthYear) + ' years old ' + job + '!';
+
+const dimasNew = `I'm ${firstName}, a ${year - birthYear} years old ${job}!`
+console.log(dimas);
+console.log(dimasNew);
+
+console.log('String with \n\
+multiplen \n\
+lines');
+
+console.log(`String with 
+multiplen 
+lines`);
+
+// lesson 18
