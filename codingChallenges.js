@@ -15,3 +15,53 @@ Test data:
 § Data 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1.76 m tall.
 GOOD LUCK 😀
 */
+
+
+
+// Solution 
+
+// Case 1
+let massMark = 78;
+let heightMark = 1.69;
+
+let massJohn = 92;
+let heightJohn = 1.95;
+
+let infoBMIMark = calcBMI(massMark, heightMark);
+let infoBMIJohn = calcBMI(massJohn, heightJohn);
+
+let markHigherBMI = infoBMIMark > infoBMIJohn ? true : false;
+
+
+function calcBMI(mass, height) {
+  let infoBMI;
+  infoBMI = mass / height ** 2
+  return infoBMI;
+}
+
+console.log(markHigherBMI);
+
+// Case 2
+
+let massMark = 95;
+let heightMark = 1.88;
+
+let massJohn = 85;
+let heightJohn = 1.76;
+
+let infoBMIMark = calcBMI(massMark, heightMark);
+let infoBMIJohn = calcBMI(massJohn, heightJohn);
+
+let markHigherBMI = infoBMIMark > infoBMIJohn ? true : false;
+
+
+function calcBMI(mass, height) {
+  let infoBMI;
+  infoBMI = mass / height ** 2
+  return infoBMI;
+}
+
+console.log(markHigherBMI);
+
+
+// Mentors Solution
