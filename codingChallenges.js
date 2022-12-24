@@ -21,47 +21,70 @@ GOOD LUCK 😀
 // Solution 
 
 // Case 1
-let massMark = 78;
-let heightMark = 1.69;
+// let massMark = 78;
+// let heightMark = 1.69;
 
-let massJohn = 92;
-let heightJohn = 1.95;
+// let massJohn = 92;
+// let heightJohn = 1.95;
 
-let infoBMIMark = calcBMI(massMark, heightMark);
-let infoBMIJohn = calcBMI(massJohn, heightJohn);
+// let infoBMIMark = calcBMI(massMark, heightMark);
+// let infoBMIJohn = calcBMI(massJohn, heightJohn);
 
-let markHigherBMI = infoBMIMark > infoBMIJohn ? true : false;
+// let markHigherBMI = infoBMIMark > infoBMIJohn ? true : false;
 
 
-function calcBMI(mass, height) {
-  let infoBMI;
-  infoBMI = mass / height ** 2
-  return infoBMI;
-}
+// function calcBMI(mass, height) {
+//   let infoBMI;
+//   infoBMI = mass / height ** 2
+//   return infoBMI;
+// }
 
-console.log(markHigherBMI);
+// console.log(markHigherBMI);
 
 // Case 2
 
-let massMark = 95;
-let heightMark = 1.88;
+// let massMark = 95;
+// let heightMark = 1.88;
 
-let massJohn = 85;
-let heightJohn = 1.76;
+// let massJohn = 85;
+// let heightJohn = 1.76;
 
-let infoBMIMark = calcBMI(massMark, heightMark);
-let infoBMIJohn = calcBMI(massJohn, heightJohn);
+// let infoBMIMark = calcBMI(massMark, heightMark);
+// let infoBMIJohn = calcBMI(massJohn, heightJohn);
 
-let markHigherBMI = infoBMIMark > infoBMIJohn ? true : false;
+// let markHigherBMI = infoBMIMark > infoBMIJohn ? true : false;
 
 
-function calcBMI(mass, height) {
-  let infoBMI;
-  infoBMI = mass / height ** 2
-  return infoBMI;
-}
+// function calcBMI(mass, height) {
+//   let infoBMI;
+//   infoBMI = mass / height ** 2
+//   return infoBMI;
+// }
 
-console.log(markHigherBMI);
+// console.log(markHigherBMI);
 
 
 // Mentors Solution
+const massMark = 78;
+const heightMark = 1.69;
+const massJohn = 92;
+const heightJohn = 1.95;
+
+// const massMark = 95;
+// const heightMark = 1.88;
+// const massJohn = 85;
+// const heightJohn = 1.76;
+
+
+
+const BMIMark = massMark / heightMark ** 2;
+const BMIJohn = massJohn / (heightJohn * heightJohn);
+
+const markHigherBMI = BMIMark > BMIJohn;
+
+
+console.log(BMIMark, BMIJohn, markHigherBMI);
+
+
+
+
