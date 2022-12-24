@@ -140,7 +140,7 @@ if (birthYear <= 2000) {
 }
 console.log(century);
 
-// lesson 19 coding challenge 2
+// lesson 20
 
 
 
