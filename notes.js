@@ -164,16 +164,33 @@ console.log(n); // 10
 
 // lesson 21
 
+// 5 falsy values: 0, '', undefined, null, NaN
+
+console.log(Boolean(0));
+console.log(Boolean(''));
+console.log(Boolean({}));
+console.log(Boolean(undefined));
+console.log(Boolean(null));
+console.log(Boolean('Dima'));
+console.log(Boolean(NaN));
+
+const money = 1;
+if (money) {
+  console.log(`Don't spend it all :D`)
+} else {
+  console.log(`You should get a job!`)
+}
+
+let height = 5;
+
+if (height) {
+  console.log('YAY! Height is defined');
+} else {
+  console.log('Height is UNDEFINED')
+}
 
 
-
-
-
-
-
-
-
-
+// lesson 22
 
 
 
