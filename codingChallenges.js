@@ -159,17 +159,14 @@ GOOD LUCK 😀
 
 // Solution
 
-
-
-
-// let averageScoreDolphins = (96 + 108 + 89) / 3;
-// let averageScoreKoalas = (88 + 91 + 110) / 3;
+let averageScoreDolphins = (96 + 108 + 89) / 3;
+let averageScoreKoalas = (88 + 91 + 110) / 3;
 
 // let averageScoreDolphins = (97 + 112 + 101) / 3;
 // let averageScoreKoalas = (109 + 95 + 123) / 3;
 
-let averageScoreDolphins = (97 + 112 + 101) / 3;
-let averageScoreKoalas = (109 + 95 + 106) / 3;
+// let averageScoreDolphins = (97 + 112 + 101) / 3;
+// let averageScoreKoalas = (109 + 95 + 106) / 3;
 
 const minScore = 100;
 
@@ -182,6 +179,45 @@ if (averageScoreDolphins > averageScoreKoalas && averageScoreDolphins >= minScor
 }
 
 // Mentors Solution
+
+const scoreDolphins = (96 + 108 + 89) / 3;
+const scoreKoalas = (88 + 91 + 110) / 3;
+console.log(scoreDolphins, scoreKoalas);
+
+if (scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
+  console.log(`Dolphins wins the trophy `);
+} else if (scoreKoalas > scoreDolphins && scoreKoalas >= 100) {
+  console.log(`Koalas wins the trophy `);
+} else if (scoreDolphins === scoreKoalas && scoreKoalas >= 100 && scoreDolphins >= 100) {
+  console.log(`Both win the trophy!`);
+} else {
+  console.log(`No one wins the trophy!`);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
