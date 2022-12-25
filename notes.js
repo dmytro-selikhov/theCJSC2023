@@ -299,6 +299,53 @@ if (day === 'monday') {
 
 // lesson 27 Statements and Expressions
 
+3 + 4 // expression >> produce a value
+1991 // expression >> produce a value
+true && false && !false // expression >> produce a value
+
+if (23 > 10) { // statements >> doesn't produce a value
+  const str = '23 is bigger';
+}
+
+const me = 'Dima';
+console.log(`I'm ${2037 - 1988} years old ${me}`);
+
+// lesson 28 The Conditional (Ternary) Operator
+const age = 23;
+// age >= 18 ? console.log(`I like to drink wine 🍷!`) : console.log(`I like to drink water💧!`);
+
+const drink = age >= 18 ? `wine 🍷` : `water💧`
+console.log(drink);
+
+let drink2;
+
+if (age >= 18) {
+  drink2 = `wine 🍷`;
+} else {
+  drink2 = `water💧`;
+}
+
+console.log(drink2);
+
+console.log(`I like to drink ${age >= 18 ? `wine 🍷` : `water💧`}`);
+
+// lesson #29 Coding Challenge #4
+// lesson 30 JavaScript Releases: ES5, ES6+ And ESNext
+// lesson 31
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
