@@ -212,11 +212,20 @@ if (favourite === 23) { // '23' ! == 23
 
 if (favourite !== 23) console.log('Why not 23?');
 
+
 // lesson 23
+age = 16;
+A: Age is greater or equal 20
+B: Age is less than 30
+
+!A(false) // true
+A(false) && B(true) // false
+A(false) || B(true) // true
+!A(true) && B(true) // true
+A(false) || B(false) // false
 
 
-
-
+// lesson 24
 
 
 
