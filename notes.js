@@ -331,7 +331,7 @@ console.log(`I like to drink ${age >= 18 ? `wine 🍷` : `water💧`}`);
 
 // lesson #29 Coding Challenge #4
 // lesson 30 JavaScript Releases: ES5, ES6+ And ESNext
-// lesson 31
+// lesson 31 Section Info
 
 
 
