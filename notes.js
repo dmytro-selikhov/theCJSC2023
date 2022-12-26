@@ -332,13 +332,70 @@ console.log(`I like to drink ${age >= 18 ? `wine 🍷` : `water💧`}`);
 // lesson #29 Coding Challenge #4
 // lesson 30 JavaScript Releases: ES5, ES6+ And ESNext
 // lesson 31 Section Info
+// lesson 32 Activating Strict Mode
+
+// 'use strict';
+
+let hasDriversLicense = false;
+let passTest = true;
+
+if (passTest) hasDriversLicense = true;
+if (hasDriversLicense) console.log(`I can drive :D`);
+
+// lesson 33 Functions 
+
+function logger() {
+  console.log(`My name is Dima`);
+}
+
+// calling / running /  invoking function
+logger();
+logger();
+logger();
 
 
 
+function fruitProcessor(apples, oranges) {
+  console.log(apples, oranges);
+  const juice = `Juice with ${apples} apples and ${oranges} oranges!`;
+  return juice;
+}
+
+const appleJuice = fruitProcessor(5, 0);
+console.log(appleJuice);
+console.log(fruitProcessor(5, 0));
+
+const mixJuice = fruitProcessor(5, 4);
+console.log(mixJuice);
+
+const appleOrangeJuice = fruitProcessor(2, 4);
+console.log(appleOrangeJuice);
+const num = Number('23');
+console.log(num);
+
+//!!! DON'T REPEAT YOURSELF OR DRY
+
+// lesson 34 Function Declaration vs. Expressions
 
 
+// Function Declaration - We can call them before declaration
+calcAge1(1988)
+
+function calcAge1(birthYear) {
+  return 2037 - birthYear;
+}
+console.log(age1);
 
 
+// Function Expression - We cannot call them before declaration
+const calcAge2 = function (birthYear) {
+  return 2037 - birthYear;
+}
+
+const age2 = calcAge2(1988);
+console.log(age1, age2);
+
+// lesson 35 Arrow Functions
 
 
 
