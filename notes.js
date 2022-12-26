@@ -413,6 +413,60 @@ console.log(yearsUntillRetirement(1980, 'Bob'));
 
 // lesson 36 Functions Calling Other Functions
 
+function cutFruitPieces(fruit) {
+  return fruit * 4;
+}
+
+function fruitProcessor(apples, oranges) {
+  const applePieces = cutFruitPieces(apples);
+  const orangesPieces = cutFruitPieces(oranges);
+
+  console.log(apples, oranges);
+  console.log(applePieces, orangesPieces);
+
+  const juice = `Juice with ${applePieces} pieces of apples and ${orangesPieces} pieces of oranges!`;
+  return juice;
+}
+
+console.log(fruitProcessor(2, 3));
+
+// lesson 37 Reviewing Functions
+
+
+const calcAge = function (birthYear) {
+  return 2037 - birthYear;
+}
+const yearsUntillRetirement = function (birthYear, firstName) {
+  const age = calcAge(birthYear);
+  const retirement = 65 - age;
+  if (retirement > 0) {
+    console.log(`${firstName} retires in ${retirement} years`);
+    return retirement;
+  } else {
+    console.log(`${firstName} has already retired🎉!`);
+    return -1;
+  }
+  // return `${firstName} retires in ${retirement} years`
+}
+
+
+console.log(yearsUntillRetirement(1991, 'Mike'));
+console.log(yearsUntillRetirement(1970, 'Jake'));
+
+// lesson 38 Coding Challenge #1
+
+// lesson 39 Introduction to Arrays
+
+
+
+
+
+
+
+
+
+
+
 
 
 
