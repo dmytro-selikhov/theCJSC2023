@@ -309,15 +309,42 @@ Hint: Remember that an array needs a value in each position, and that value can 
 
 // Solution
 
+// const bill = 275;
+// const bill = 40;
+// const bill = 430;
+const bill = 100;
+const bills = [125, 555, 44];
+const tips = [];
+const total = [];
 
+function calcTip(price) {
+  if (price >= 50 && price <= 300) {
+    tips.push(`${price * 0.15}`);
+    total.push(`The bill was ${price}, the tip was ${price * 0.15}, and the total value ${price + price * 0.15}`);
+  } else {
+    tips.push(`${price * 0.2}`);
+    total.push(`The bill was ${price}, the tip was ${price * 0.2}, and the total value ${price + price * 0.2}`);
+  }
+  console.log(tips, total);
 
+}
+calcTip(bill);
+calcTip(bills[0]);
+calcTip(bills[1]);
+calcTip(bills[2]);
 
+// Mentors Solution
 
+const calcTip = function (bill) {
+  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+}
 
+// const calcTip = bill => bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 
-
-
-
+const bills = [125, 555, 44];
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+console.log(bills, tips, totals);
 
 
 
