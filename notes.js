@@ -534,11 +534,23 @@ if (friends.includes('Steven')) {
 
 // lesson 41 Coding Challenge #2
 // lesson 42 Introduction To Objects
+const dimasArray = [
+  'Dima',
+  'Selikhov',
+  2037 - 1988,
+  'System Administrator',
+  ['Michael', 'Peter', 'Steven']
+];
 
+const dimas = {
+  firstName: 'Dima',
+  lastName: 'Selikhov',
+  age: 2037 - 1988,
+  job: 'System Administrator',
+  friends: ['Michael', 'Peter', 'Steven']
+};
 
-
-
-
+// lecture 43 Dot Vs. Bracket Notation
 
 
 
