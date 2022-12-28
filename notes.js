@@ -492,6 +492,53 @@ const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length -
 console.log(ages);
 
 // lesson 40 Basic Array Operations(Methods)
+const friends = ['Michael', 'Steven', 'Peter'];
+
+// Add Elements To Array
+const newLenght = friends.push('Jay'); // Retern array lenght 
+console.log(friends);
+console.log(newLenght);
+
+friends.unshift('John'); // Retern array lenght
+console.log(friends);
+
+// Remove Elements From Array
+friends.pop(); // removed last element
+const popped = friends.pop(); // Return removed last element
+console.log(popped);
+console.log(friends);
+
+friends.shift() // removed first element
+console.log(friends);
+
+console.log(friends.indexOf('Steven'));
+console.log(friends.indexOf('Bob')); // -1 , because Bob is no in array
+
+friends.push(23);
+console.log(friends.includes('Steven'))
+console.log(friends.includes('Bob')); // false , because Bob is no in array
+console.log(friends.includes('23')); // fasle
+console.log(friends.includes(23)); // true
+
+if (friends.includes('Peter')) {
+  console.log('You have a friend called Peter');
+} else {
+  console.log(' You don\'t have a friend called Peter');
+}
+
+if (friends.includes('Steven')) {
+  console.log('You have a friend called Steven');
+} else {
+  console.log(' You don\'t have a friend called Steven');
+}
+
+// lesson 41 Coding Challenge #2
+
+
+
+
+
+
 
 
 
