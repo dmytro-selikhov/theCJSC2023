@@ -552,23 +552,44 @@ const dimas = {
 
 // lecture 43 Dot Vs. Bracket Notation
 
+const dimas = {
+  firstName: 'Dima',
+  lastName: 'Selikhov',
+  age: 2037 - 1988,
+  job: 'System Administrator',
+  friends: ['Michael', 'Peter', 'Steven']
+};
+
+console.log(dimas);
+
+console.log(dimas.lastName);
+console.log(dimas['lastName']);
+
+const nameKey = 'Name';
+
+console.log(dimas['first' + nameKey]);
+console.log(dimas['last' + nameKey]);
+
+const interestedIn = prompt('What do you want to know about Dimas? Choose between firstName, lastName, age, job and friends');
+// console.log(interestedIn);
+// console.log(dimas[interestedIn]);
+
+if (dimas[interestedIn]) {
+  console.log(dimas[interestedIn]);
+} else {
+  console.log('Wrong request! Choose between firstName, lastName, age, job and friends');
+}
 
 
+dimas.location = 'Canada';
+dimas['twitter'] = '@dmytro_selikhov';
+console.log(dimas);
 
+// Challenge
+// "Dima has 3 friends, and his best friend is called Michael"
+console.log(`${dimas.firstName} has ${dimas.friends.length} friends, and his best friend is called ${dimas.friends[0]}`);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+// lection 44 Object Methods
 
 
 
