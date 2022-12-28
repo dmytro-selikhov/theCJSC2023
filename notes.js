@@ -589,7 +589,78 @@ console.log(dimas);
 // "Dima has 3 friends, and his best friend is called Michael"
 console.log(`${dimas.firstName} has ${dimas.friends.length} friends, and his best friend is called ${dimas.friends[0]}`);
 
+
+
 // lection 44 Object Methods
+
+const dimas = {
+  firstName: 'Dima',
+  lastName: 'Selikhov',
+  birthYear: 1988,
+  job: 'System Administrator',
+  friends: ['Michael', 'Peter', 'Steven'],
+  hasDriverLicense: true,
+
+  // calcAge: function (birthYear) { // method
+  //   return 2037 - birthYear;
+  // }
+
+  // calcAge: function () { // method
+  //   console.log(this);
+  //   return 2037 - this.birthYear;
+  // }
+
+  calcAge: function () {
+    this.age = 2037 - this.birthYear;
+    return this.age;
+  },
+
+  getSummary: function () {
+    this.summary = `${this.firstName} is a ${this.calcAge()}'s old ${this.job}, and he ${this.hasDriverLicense ? 'has' : 'has not'} a driver's license`;
+    return this.summary;
+  }
+
+};
+
+console.log(dimas.calcAge());
+console.log(dimas.getSummary());
+
+
+// console.log(dimas['calcAge'](1988));
+
+// Challenge
+// "Dima is a 49-year  old teacher, and he has a/no driver's license"
+
+// getSummary: function () {
+//   this.summary = `${this.firstName} is a ${this.calcAge()}'s old ${this.job}, and he ${this.hasDriverLicense ? 'has' : 'has not'} a driver's license`;
+//   return this.summary;
+// }
+
+
+// Mentors Solution
+
+// getSummary: function() {
+//   return `${this.firstName} is a ${this.calcAge()}-year old ${this.job}, and he has ${this.hasDriverLicense ? 'a' : 'no'} driver's license.`
+// }
+
+// console.log(dimas.getSummary());
+
+
+
+// lesson 45 Coding Challenge #3
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
