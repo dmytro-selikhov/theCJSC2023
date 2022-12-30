@@ -720,6 +720,73 @@ for (let i = 0; i < dimasArray.length; i++) {
 
 // lesson 48 Looping Backwards And Loops In Loops
 
+const dimasArray = [
+  'Dima',
+  'Selikhov',
+  2037 - 1988,
+  'System Administrator',
+  ['Michael', 'Peter', 'Steven']
+];
+
+// 0, 1, ..., 4
+// 4, 3, ..., 0
+
+for (let i = dimasArray.length - 1; i >= 0; i--) {
+  console.log([i], dimasArray[i]);
+}
+
+for (let exercise = 1; exercise < 4; exercise++) {
+  console.log(`--- Starting exircise ${exercise} ---`);
+
+  for (let rep = 1; rep < 6; rep++) {
+    console.log(`Exercise ${exercise}: Lifiting weight repetition ${rep} ---`);
+  }
+}
+
+// lesson 49 The While Loop
+
+// for loop keeps running while condition is TRUE
+// for (let rep = 1; rep <= 10; rep++) {
+//   console.log(`FOR: Lifting weights repetition ${rep}🏋🏻`);
+// }
+
+let rep = 1;
+while (rep <= 10) {
+  console.log(`WHILE: Lifting weights repetition ${rep}🏋🏻`);
+  rep++;
+}
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+// console.log(dice);
+
+while (dice !== 6) {
+  console.log(`You rolled a ${dice}`);
+  dice = Math.trunc(Math.random() * 6) + 1;
+  if (dice === 6) console.log('Loop is about to end ...');
+}
+
+
+// lesson 50 Coding Challenge #4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
