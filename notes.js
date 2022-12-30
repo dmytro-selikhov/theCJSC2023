@@ -658,18 +658,67 @@ for (let rep = 1; rep <= 10; rep++) {
 
 
 // lesson 47 Looping Arrays, Breaking and Continuing
+const dimasArray = [
+  'Dima',
+  'Selikhov',
+  2037 - 1988,
+  'System Administrator',
+  ['Michael', 'Peter', 'Steven'],
+  true,
+  'That is the end of the Array'
+];
+
+const types = [];
+
+for (let i = 0; i < dimasArray.length; i++) {
+  // Reading from dimasArray
+  console.log(dimasArray[i], typeof dimasArray[i]);
+
+  // Filling types array
+  // types[i] = typeof dimasArray[i];
+
+  types.push(typeof dimasArray[i]);
+
+}
+
+console.log(types);
+
+const years = [1991, 2007, 1969, 2020, 1988, 1993];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+  ages.push(2023 - years[i]);
+}
+
+console.log(ages);
+
+// continue and break
+const dimasArray = [
+  'Dima',
+  'Selikhov',
+  2037 - 1988,
+  'System Administrator',
+  ['Michael', 'Peter', 'Steven'],
+  true,
+  'That is the end of the Array'
+];
 
 
+console.log('--- ONLY STRINGS ---')
+for (let i = 0; i < dimasArray.length; i++) {
+  if (typeof dimasArray[i] !== 'string') continue;
 
+  console.log(dimasArray[i], typeof dimasArray[i]);
+}
 
+console.log('--- BREAK WITH NUMBER ---')
+for (let i = 0; i < dimasArray.length; i++) {
+  if (typeof dimasArray[i] === 'number') break;
 
+  console.log(dimasArray[i], typeof dimasArray[i]);
+}
 
-
-
-
-
-
-
+// lesson 48 Looping Backwards And Loops In Loops
 
 
 
