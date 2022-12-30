@@ -651,7 +651,13 @@ console.log(dimas.getSummary());
 // lesson 46 Iteration: The For Loop
 
 
+// for loop keeps running while condition is TRUE
+for (let rep = 1; rep <= 10; rep++) {
+  console.log(`Lifting weights repetition ${rep}🏋🏻`);
+}
 
+
+// lesson 47 Looping Arrays, Breaking and Continuing
 
 
 
