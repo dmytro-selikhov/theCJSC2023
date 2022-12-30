@@ -648,6 +648,8 @@ console.log(dimas.getSummary());
 
 
 // lesson 45 Coding Challenge #3
+// lesson 46 Iteration: The For Loop
+
 
 
 
