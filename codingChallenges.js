@@ -358,6 +358,55 @@ Test data: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.9
 
 // Solution
 
+const parametersMark = {
+  fullName: 'Mark Miller',
+  mass: 78,
+  height: 1.69,
+  calcBMI: function () {
+    this.indexBMI = this.mass / this.height ** 2;
+    return this.indexBMI;
+  }
+};
+
+const parametersJohn = {
+  fullName: 'John Smith',
+  mass: 92,
+  height: 1.95,
+  calcBMI: function () {
+    this.indexBMI = this.mass / this.height ** 2;
+    return this.indexBMI;
+  }
+};
+
+
+console.log(parametersMark.calcBMI());
+console.log(parametersJohn.calcBMI());
+
+parametersMark.indexBMI > parametersJohn.indexBMI ? `${parametersMark.fullName}'s BMI (${parametersMark.indexBMI}) is higher than ${parametersJohn.fullName}'s (${parametersJohn.indexBMI})!` : `${parametersJohn.fullName}'s BMI (${parametersJohn.indexBMI}) is higher than ${parametersMark.fullName}'s (${parametersMark.indexBMI})!`
+
+
+// Mentors Solution
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
