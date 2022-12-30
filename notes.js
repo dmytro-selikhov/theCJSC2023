@@ -767,11 +767,11 @@ while (dice !== 6) {
 
 
 // lesson 50 Coding Challenge #4
-
-
-
-
-
+// lesson 51 Pathways and Section Roadmaps
+// lesson 52 Course Pathways
+// lesson 53 Section Intro
+// lesson 54 Section Roadmap
+// lesson 55 Setting up Prettier and VS Code
 
 
 
