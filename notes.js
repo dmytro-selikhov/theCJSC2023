@@ -772,9 +772,15 @@ while (dice !== 6) {
 // lesson 53 Section Intro
 // lesson 54 Section Roadmap
 // lesson 55 Setting up Prettier and VS Code
+const x = 23;
+if (x === 23) console.log(23);
+
+console.log(x);
 
 
+console.log();
 
+// lesson 56 Installing Node.js and Setting Up a Dev Environment
 
 
 
