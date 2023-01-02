@@ -869,7 +869,7 @@ console.log(amplitudeNew);
 
 
 // lesson 60 Debugging (Fixing Errors)
-
+// lesson 61 Debugging with the Console and Breakpoints
 
 
 
