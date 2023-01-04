@@ -991,11 +991,11 @@ printForecast(data1);
 // lesson 66 Basic Styling with CSS
 // lesson 67 Introduction to the CSS Box Model
 // lesson 68 Section Intro
-
-
-
-
-
+// lesson 69 Section Roadmap
+// lesson 70 PROJECT #1: Guess My Number!
+// lesson 71 What's the DOM and DOM Manipulation
+// lesson 72 Selecting and Manipulating Elements
+// lesson 73 Handling Click Events
 
 
 
