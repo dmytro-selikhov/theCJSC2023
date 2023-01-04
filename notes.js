@@ -996,7 +996,8 @@ printForecast(data1);
 // lesson 71 What's the DOM and DOM Manipulation
 // lesson 72 Selecting and Manipulating Elements
 // lesson 73 Handling Click Events
-
+// lesson 74 Implementing the Game Logic
+// lesson 75 Manipulating CSS Styles
 
 
 
