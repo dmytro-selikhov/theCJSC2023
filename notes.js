@@ -999,7 +999,7 @@ printForecast(data1);
 // lesson 74 Implementing the Game Logic
 // lesson 75 Manipulating CSS Styles
 // lesson 76 Coding Challenge #1
-
+// lesson 77 Implementing Highscores
 
 
 

@@ -582,8 +582,18 @@ printForecast(data1);
 
 
 
+// lesson 76 Coding Chakkenge #1
 
+/*
+Implement a game rest functionality, so that the player can make a new guess!
+Your tasks:
+1. Selecttheelementwiththe'again'classandattachaclickeventhandler 2. Inthehandlerfunction,restoreinitialvaluesofthe'score'and
+'secretNumber' variables
+3. Restoretheinitialconditionsofthemessage,number,scoreandguessinput
+fields
+4. Alsorestoretheoriginalbackgroundcolor(#222)andnumberwidth(15rem)
 
+*/
 
 
 
