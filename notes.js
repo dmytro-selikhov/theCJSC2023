@@ -1000,7 +1000,7 @@ printForecast(data1);
 // lesson 75 Manipulating CSS Styles
 // lesson 76 Coding Challenge #1
 // lesson 77 Implementing Highscores
-
+// lesson 78 Refactoring Our Code: The DRY Principle
 
 
 
