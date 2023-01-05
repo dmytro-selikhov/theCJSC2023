@@ -1001,7 +1001,7 @@ printForecast(data1);
 // lesson 76 Coding Challenge #1
 // lesson 77 Implementing Highscores
 // lesson 78 Refactoring Our Code: The DRY Principle
-
+// lesson 79 PROJECT #2: Modal Window
 
 
 
