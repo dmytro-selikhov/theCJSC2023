@@ -1006,8 +1006,8 @@ printForecast(data1);
 // lesson 81 Handling an "Esc" Keypress Event
 // lesson 82 PROJECT #3: Pig Game
 // lesson 83 Rolling the Dice
-
-
+// lesson 84 Switching the Active Player
+// lesson 85 Holding Current Score
 
 
 
