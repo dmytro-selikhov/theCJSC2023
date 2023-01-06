@@ -1004,8 +1004,8 @@ printForecast(data1);
 // lesson 79 PROJECT #2: Modal Window
 // lesson 80 Working With Classes
 // lesson 81 Handling an "Esc" Keypress Event
-
-
+// lesson 82 PROJECT #3: Pig Game
+// lesson 83 Rolling the Dice
 
 
 
