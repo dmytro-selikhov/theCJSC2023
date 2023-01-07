@@ -1017,7 +1017,7 @@ printForecast(data1);
 
 // lesson 90 The JavaScript Engine and Runtime
 // lesson 91 Execution Contexts and The Call Stack 
-
+// lesson 92 Scope and The Scope Chain
 
 
 
