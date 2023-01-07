@@ -1008,6 +1008,7 @@ printForecast(data1);
 // lesson 83 Rolling the Dice
 // lesson 84 Switching the Active Player
 // lesson 85 Holding Current Score
+// lesson 86 Resetting the Game
 
 
 
