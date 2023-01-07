@@ -1048,6 +1048,7 @@ function first() {
 first();
 
 // lesson 93 Scoping in Practice
+// lesson 94 Variable Environment: Hoisting and The TDZ
 
 
 
