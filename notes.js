@@ -1009,10 +1009,13 @@ printForecast(data1);
 // lesson 84 Switching the Active Player
 // lesson 85 Holding Current Score
 // lesson 86 Resetting the Game
+// lesson 87 Section Intro
+// lesson 88 Section Roadmap
+// lesson 89 An High-Level Overview of JavaScript
 
+// JavaScript is Hight - level, object-oriented, multi-paradigm programming language.
 
-
-
+// lesson 90 The JavaScript Engine and Runtime
 
 
 
