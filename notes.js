@@ -1019,12 +1019,35 @@ printForecast(data1);
 // lesson 91 Execution Contexts and The Call Stack 
 // lesson 92 Scope and The Scope Chain
 
+// Scope Types:
+//  - Global Scope
+//  - Function Scope
+//  - Block Scope(ES6)
 
+const myName = 'Jonas';
 
+function first() {
+  const age = 30;
 
+  if (age >= 30) { // true
+    const decade = 3;
+    var millenial = true;
+  }
 
+  function second() {
+    const job = 'teacher';
 
+    console.log(`${myName} is a ${age}-old ${job}`);
+    // Jonas is a 30-old teacher
+  }
 
+  second();
+
+}
+
+first();
+
+// lesson 93 Scoping in Practice
 
 
 
