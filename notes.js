@@ -1106,7 +1106,8 @@ console.log(z === window.z);
 // lesson 99 Primitives vs. Objects (Primitive vs. Reference Types)
 // lesson 100 Primitives vs. Objects in Practice
 // lesson 101 Section Intro
-
+// lesson 102 Section Roadmap
+// lesson 103 Destructuring Arrays
 
 
 
