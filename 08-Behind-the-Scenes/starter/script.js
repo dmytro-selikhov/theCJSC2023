@@ -1,122 +1,174 @@
 'use strict';
 // 'sloppy mod'
-function calcAge(birthYear) {
-  const age = 2037 - birthYear;
+// function calcAge(birthYear) {
+//   const age = 2037 - birthYear;
 
-  function printAge() {
-    let output = `${firstName}, you are ${age}, born in ${birthYear}`
-    console.log(output);
+//   function printAge() {
+//     let output = `${firstName}, you are ${age}, born in ${birthYear}`
+//     console.log(output);
 
-    if (birthYear >= 1981 && birthYear <= 1996) {
-      var millenial = true;
-      // Creating NEW variable with same name as outer scope's variable
-      const firstName = 'Steven';
+//     if (birthYear >= 1981 && birthYear <= 1996) {
+//       var millenial = true;
+//       // Creating NEW variable with same name as outer scope's variable
+//       const firstName = 'Steven';
 
-      // Reassigning outer scope's variable
-      output = 'NEW OUTPUT';
-
-
-      const str = `Oh, and you're a millenial, ${firstName}`;
-      console.log(str);
+//       // Reassigning outer scope's variable
+//       output = 'NEW OUTPUT';
 
 
-      function add(a, b) {
-        return a + b;
-      }
+//       const str = `Oh, and you're a millenial, ${firstName}`;
+//       console.log(str);
 
-    }
-    // console.log(str);
-    console.log(millenial);
-    // console.log(add(2, 3));
-    console.log(output);
-  }
-  printAge();
 
-  return age;
-}
+//       function add(a, b) {
+//         return a + b;
+//       }
 
-const firstName = 'Jonas';
-calcAge(1991);
+//     }
+//     // console.log(str);
+//     console.log(millenial);
+//     // console.log(add(2, 3));
+//     console.log(output);
+//   }
+//   printAge();
+
+//   return age;
+// }
+
+// const firstName = 'Jonas';
+// calcAge(1991);
 
 
 
 
 // Hoisting and TDZ in Practice
 
-console.log(me);
+// console.log(me);
 // console.log(job);
 // console.log(year);
 
-var me = 'Dima';
-let job = 'System Administrator';
-const year = 1991;
+// var me = 'Dima';
+// let job = 'System Administrator';
+// const year = 1991;
 
 
 // Functions 
-console.log(addDecl(2, 3));
+// console.log(addDecl(2, 3));
 // console.log(addExpr(2, 3));
 // console.log(addArrow(2, 3));
 
-function addDecl(a, b) {
-  return a + b;
-}
+// function addDecl(a, b) {
+//   return a + b;
+// }
 
-const addExpr = function (a, b) {
-  return a + b;
-}
+// const addExpr = function (a, b) {
+//   return a + b;
+// }
 
-var addArrow = (a, b) => a + b;
+// var addArrow = (a, b) => a + b;
 
 // Example
-console.log(undefined);
-if (!numProducts) deleteShoppingCart();
+// console.log(undefined);
+// if (!numProducts) deleteShoppingCart();
 
-var numProducts = 10;
+// var numProducts = 10;
 
-function deleteShoppingCart() {
-  console.log(`All products deleted!`);
-}
+// function deleteShoppingCart() {
+//   console.log(`All products deleted!`);
+// }
 
-var x = 1;
-let y = 2;
-const z = 3;
+// var x = 1;
+// let y = 2;
+// const z = 3;
 
-console.log(x === window.x);
-console.log(y === window.y);
-console.log(z === window.z);
+// console.log(x === window.x);
+// console.log(y === window.y);
+// console.log(z === window.z);
 
-console.log(this);
+// console.log(this);
 
 
-const calcAge2 = function (birthYear) {
-  console.log(2037 - birthYear);
-  console.log(this);
-}
+// const calcAge2 = function (birthYear) {
+//   console.log(2037 - birthYear);
+//   console.log(this);
+// }
 
-calcAge2(1991);
+// calcAge2(1991);
 
-const calcAge3 = (birthYear) => {
-  console.log(2037 - birthYear);
-  console.log(this);
-}
+// const calcAge3 = (birthYear) => {
+//   console.log(2037 - birthYear);
+//   console.log(this);
+// }
 
-calcAge3(1980);
+// calcAge3(1980);
+
+// const jonas = {
+//   year: 1991,
+//   calcAge: function () {
+//     console.log(this);
+//     console.log(2037 - this.year);
+//   }
+// }
+
+// jonas.calcAge();
+
+// const matilda = {
+//   year: 2017,
+// }
+
+// matilda.calcAge = jonas.calcAge;
+// matilda.calcAge();
+
+// const f = jonas.calcAge;
 
 const jonas = {
+  firstName: 'Jonas',
   year: 1991,
   calcAge: function () {
     console.log(this);
     console.log(2037 - this.year);
-  }
-}
 
+    // Solution 1
+    //   const self = this; // self or that 
+    //   const isMillenial = function () {
+    //     console.log(self.year >= 1981 && self.year <= 1996);
+    //   };
+    //   isMillenial();
+    // },
+
+    // Solution 2
+    const isMillenial = () => {
+      console.log(this.year >= 1981 && this.year <= 1996);
+    };
+    isMillenial();
+  },
+
+  greet: function () {
+    console.log(this);
+    console.log(`Hey ${this.firstName}`)
+  },
+  // greet: () => {
+  //   console.log(`Hey ${this.firstName}`)
+  // },
+
+};
+
+jonas.greet();
 jonas.calcAge();
 
-const matilda = {
-  year: 2017,
+
+// arguments keyword
+const addExpr = function (a, b) {
+  console.log(arguments);
+  return a + b;
 }
+addExpr(2, 5);
+addExpr(2, 5, 8, 12);
 
-matilda.calcAge = jonas.calcAge;
-matilda.calcAge();
 
-const f = jonas.calcAge;
+var addArrow = (a, b) => {
+  console.log(arguments);
+  return a + b;
+};
+
+addArrow(2, 5, 8)
