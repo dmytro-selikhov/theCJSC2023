@@ -1105,7 +1105,7 @@ console.log(z === window.z);
 // lesson 98 Regular Functions vs. Arrow Functions
 // lesson 99 Primitives vs. Objects (Primitive vs. Reference Types)
 // lesson 100 Primitives vs. Objects in Practice
-
+// lesson 101 Section Intro
 
 
 

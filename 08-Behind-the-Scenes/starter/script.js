@@ -179,16 +179,59 @@
 // console.log(age);
 // console.log(oldAge);
 
-const me = {
-  name: 'Jonas',
-  age: 30,
-}
+// const me = {
+//   name: 'Jonas',
+//   age: 30,
+// }
 
-const friend = me;
-friend.age = 27;
+// const friend = me;
+// friend.age = 27;
 
-console.log('Friend', friend);
-console.log('Me', me);
+// console.log('Friend', friend);
+// console.log('Me', me);
+
+// Primitive Types
+// let lastName = 'Williams';
+// let oldLastName = lastName;
+// lastName = 'Davis';
+// console.log(lastName, oldLastName);
+
+// Reference types
+const jessica = {
+  firstName: 'Jessica',
+  lastName: 'Williams',
+  age: 27,
+};
+
+// const marriedJessica = jessica;
+// marriedJessica.lastName = 'Davis';
+
+// console.log('Before marriage:', jessica);
+// console.log('After marriage:', marriedJessica);
+
+// Copying objects 
+const jessica2 = {
+  firstName: 'Jessica',
+  lastName: 'Williams',
+  age: 27,
+};
+
+// Shallow copy
+const jessicaCopy = Object.assign({}, jessica2);
+jessicaCopy.lastName = 'Davis';
+console.log('Before marriage:', jessica);
+console.log('After marriage:', jessicaCopy);
+
+// Deep Clone
+//??
+
+
+
+
+
+
+
+
 
 
 
