@@ -1109,6 +1109,7 @@ console.log(z === window.z);
 // lesson 102 Section Roadmap
 // lesson 103 Destructuring Arrays
 // lesson 104 Destructuring Objects
+// lesson 105 The Spread Operator (...)
 
 
 
