@@ -1108,7 +1108,7 @@ console.log(z === window.z);
 // lesson 101 Section Intro
 // lesson 102 Section Roadmap
 // lesson 103 Destructuring Arrays
-// test text
+// lesson 104 Destructuring Objects
 
 
 
