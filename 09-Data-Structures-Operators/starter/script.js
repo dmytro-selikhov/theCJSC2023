@@ -83,7 +83,7 @@ restaurantCopy.name = 'Ristorante Roma'
 console.log(restaurantCopy.name);
 console.log(restaurant.name);
 
-
+console.log('test string');
 
 ///////////////////////
 // Destructuring Objects

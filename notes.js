@@ -1111,7 +1111,7 @@ console.log(z === window.z);
 // lesson 104 Destructuring Objects
 // lesson 105 The Spread Operator (...)
 // lesson 106 Rest Pattern and Parameters
-
+// test text
 
 
 
