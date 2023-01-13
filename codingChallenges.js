@@ -582,7 +582,7 @@ printForecast(data1);
 
 
 
-// lesson 76 Coding Chakkenge #1
+// lesson 76 Coding Challenge #1
 
 /*
 Implement a game rest functionality, so that the player can make a new guess!
@@ -594,6 +594,127 @@ fields
 4. Alsorestoretheoriginalbackgroundcolor(#222)andnumberwidth(15rem)
 
 */
+
+// lesson 10 Coding Challenge #1
+/**
+ * 
+Coding Challenge #1
+We're building a football betting app (soccer for my American friends 😅)!
+Suppose we get data from a web service about a certain game ('game' variable on next page). In this challenge we're gonna work with that data.
+Your tasks:
+1. Createoneplayerarrayforeachteam(variables'players1'and 'players2')
+2. Thefirstplayerinanyplayerarrayisthegoalkeeperandtheothersarefield players. For Bayern Munich (team 1) create one variable ('gk') with the goalkeeper's name, and one array ('fieldPlayers') with all the remaining 10 field players
+3. Createanarray'allPlayers'containingallplayersofbothteams(22 players)
+4. Duringthegame,BayernMunich(team1)used3substituteplayers.Socreatea new array ('players1Final') containing all the original team1 players plus 'Thiago', 'Coutinho' and 'Perisic'
+5. Basedonthegame.oddsobject,createonevariableforeachodd(called 'team1', 'draw' and 'team2')
+6. Writeafunction('printGoals')thatreceivesanarbitrarynumberofplayer names (not an array) and prints each of them to the console, along with the number of goals that were scored in total (number of player names passed in)
+7. Theteamwiththeloweroddismorelikelytowin.Printtotheconsolewhich team is more likely to win, without using an if/else statement or the ternary operator.
+Test data for 6.: First, use players 'Davies', 'Muller', 'Lewandowski' and 'Kimmich'. Then, call the function again with players from game.scored
+ */
+
+const game = {
+  team1: 'Bayern Munich', team2: 'Borrussia Dortmund', players: [
+    [
+      'Neuer',
+      'Pavard',
+      'Martinez',
+      'Alaba',
+      'Davies',
+      'Kimmich',
+      'Goretzka',
+      'Coman',
+      'Muller',
+      'Gnarby',
+      'Lewandowski',
+    ], [
+      'Burki',
+      'Schulz',
+      'Hummels',
+      'Akanji',
+      'Hakimi',
+      'Weigl',
+      'Witsel',
+      'Hazard',
+      'Brandt',
+      'Sancho',
+      'Gotze',
+    ],],
+  score: '4:0',
+  scored: ['Lewandowski', 'Gnarby', 'Lewandowski',
+    'Hummels'],
+  date: 'Nov 9th, 2037',
+  odds: {
+    team1: 1.33,
+    x: 3.25,
+    team2: 6.5,
+  },
+};
+
+// Solution
+
+/*
+const players1 = [game.team1, ...game.players[0]];
+const players2 = [game.team2, ...game.players[1]];
+console.log(players1);
+console.log(players2);
+
+const [gk, ...fieldPlayers] = players1;
+const [gk2, ...fieldPlayers2] = players2;
+
+console.log(gk, fieldPlayers);
+console.log(gk2, fieldPlayers2);
+
+const allPlayers = [...fieldPlayers, ...fieldPlayers2];
+console.log(allPlayers, allPlayers.length);
+
+const players1Final = [...game.players[0], 'Thiago', 'Coutinho', 'Perisic']
+const { team1, x: draw, team2 } = game.odds;
+console.log(team1, draw, team2);
+
+const printGoals = function (...players) {
+  let goals = players.length;
+  for (let i = 0; i < players.length; i++) {
+    console.log(`${players[i]} and total team goals ${players.length}`);
+  }
+}
+console.log(printGoals(...game.scored));
+console.log(printGoals('Davies', 'Muller', 'Lewandowski', 'Kimmich'));
+
+*/
+
+// Mentors Solution
+
+// 1.
+const [players1, players2] = game.players;
+console.log(players1, players2);
+
+// 2.
+const [gk, ...fieldPlayers] = players1;
+console.log(gk, fieldPlayers);
+
+// 3.
+const allPlayers = [...players1, ...players2];
+console.log(allPlayers);
+
+// 4.
+const players1Final = [...players1, 'Thiago', 'Coutiho', 'Periscic'];
+
+// 5.
+const { odds: { team1, x: draw, team2 } } = game;
+console.log(team1, draw, team2);
+
+// 6. 
+const printGoals = function (...players) {
+  console.log(`${players.length} goals were scored`);
+}
+
+// printGoals('Davies', 'Muller', 'Lewandowski', 'Kimmich');
+// printGoals('Davies', 'Muller');
+printGoals(...game.scored);
+
+// 7.
+team1 < team2 && console.log('Team 1 is more likely to win');
+team1 > team2 && console.log('Team 2 is more likely to win');
 
 
 

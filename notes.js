@@ -1114,8 +1114,8 @@ console.log(z === window.z);
 // lesson 107 Short Circuiting (&& and ||)
 // lesson 108 The Nullish Coalescing Operator (??)
 // lesson 109 Logical Assignment Operators
-
-
+// lesson 110 Coding Challenge #1
+// lesson 111 Looping Arrays: The for-of Loop
 
 
 
