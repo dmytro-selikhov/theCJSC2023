@@ -46,7 +46,46 @@ const restaurant = {
 
 };
 
+const rest1 = {
+  name: 'Capri',
+  // numGuests: 20,
+  numGuests: 0,
+}
 
+const rest2 = {
+  name: 'La Pizza',
+  owner: 'Giovanni Roassi',
+}
+
+// OR assignment operator
+// rest1.numGuests = rest1.numGuests || 10;
+// rest2.numGuests = rest1.numGuests || 10;
+
+rest1.numGuests ||= 10;
+rest2.numGuests ||= 10;
+
+console.log(rest1);
+console.log(rest2);
+
+
+
+
+/*
+///////////////////////////////////////
+// The Nullish Coalescing Operator
+restaurant.numGuests = 0;
+const guestsNew = restaurant.numGuests || 10;
+console.log(guestsNew);
+
+// Nullish: null and undefined (NOT 0 or'')
+const guestCorrect = restaurant.numGuests ?? 10;
+console.log(guestCorrect);
+*/
+
+
+/*
+//////////////////////////////////////////////
+// Short Circuiting (&& and ||)
 console.log('---- OR ----');
 // Use ANY data type, return ANY data type, short-circuting
 console.log(3 || 'Jonas'); // 3
@@ -56,16 +95,12 @@ console.log(undefined || null); // null
 
 console.log(undefined || 0 || '' || 'Hello' || 23 || null); // Hello
 
-
 restaurant.numGuests = 23;
 const guests1 = restaurant.numGuests ? restaurant.numGuests : 10;
 console.log(guests1);
 
 const guests2 = restaurant.numGuests || 10;
 console.log(guests2);
-
-
-
 
 console.log('---- AND ----');
 console.log(0 && 'Jonas');
@@ -79,11 +114,7 @@ if (restaurant.orderPizza) {
 }
 
 restaurant.orderPizza && restaurant.orderPizza('mushrooms', 'spinach');
-
-
-
-
-
+*/
 
 /*
 // Rest Pattern and Parameters

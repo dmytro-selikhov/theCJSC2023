@@ -1113,7 +1113,7 @@ console.log(z === window.z);
 // lesson 106 Rest Pattern and Parameters
 // lesson 107 Short Circuiting (&& and ||)
 // lesson 108 The Nullish Coalescing Operator (??)
-// test text
+// lesson 109 Logical Assignment Operators
 
 
 
