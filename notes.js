@@ -1117,7 +1117,7 @@ console.log(z === window.z);
 // lesson 110 Coding Challenge #1
 // lesson 111 Looping Arrays: The for-of Loop
 // lesson 112 Enhanced Object Literals
-
+// lesson 113 Optional Chaining (?.)
 
 
 
