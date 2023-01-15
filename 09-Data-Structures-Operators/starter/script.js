@@ -52,6 +52,17 @@ const restaurant = {
 
 };
 
+if (restaurant.openingHours && restaurant.openingHours.mon) {
+  console.log(restaurant.openingHours.mon.open);
+}
+// WITH optional chaining 
+console.log(restaurant.openingHours.mon?.open);
+console.log(restaurant.openingHours?.mon?.open);
+
+///////////////////////////
+// The for-of Loop
+
+/*
 const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
 
 for (const item of menu) {
@@ -65,10 +76,8 @@ for (const item of menu) {
 for (const [i, el] of menu.entries()) {
   console.log(`${i + 1}: ${el}`);
 }
-
-
 // console.log([...menu.entries()]);
-
+*/
 
 
 
