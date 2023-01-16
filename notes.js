@@ -1121,8 +1121,9 @@ console.log(z === window.z);
 // lesson 114 Looping Objects: Object Keys, Values, and Entries
 // lesson 115 Coding Challenge #2
 // lesson 116 Sets
-
-
+// lesson 117 Maps: Fundamentals
+// lesson 118 Maps: Iteration
+// lesson 119 Summary: Which Data Structure to Use?
 
 
 
