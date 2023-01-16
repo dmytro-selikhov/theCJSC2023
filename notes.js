@@ -1124,6 +1124,31 @@ console.log(z === window.z);
 // lesson 117 Maps: Fundamentals
 // lesson 118 Maps: Iteration
 // lesson 119 Summary: Which Data Structure to Use?
+// lesson 120 Coding Challenge #3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
