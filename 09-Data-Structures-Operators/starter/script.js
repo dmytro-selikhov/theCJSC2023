@@ -52,6 +52,15 @@ const restaurant = {
 
 };
 
+
+
+
+
+
+/*
+////////////c////////////////
+// Optional Chaining 
+
 if (restaurant.openingHours && restaurant.openingHours.mon) {
   console.log(restaurant.openingHours.mon.open);
 }
@@ -59,20 +68,42 @@ if (restaurant.openingHours && restaurant.openingHours.mon) {
 console.log(restaurant.openingHours.mon?.open);
 console.log(restaurant.openingHours?.mon?.open);
 
+// Example
+const days = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
+for (const day of days) {
+  const open = restaurant.openingHours[day]?.open ?? 'closed';
+  console.log(`On ${day}, we open at ${open}`);
+}
+
+// Methods 
+console.log(restaurant.order?.(0, 1) ?? 'Method does not exist');
+
+// Arrays
+
+const users = [
+  { name: 'Jonas', email: 'hello@jonas.io' }
+];
+// const users = [];
+
+console.log(users[0]?.name ?? 'User array empty');
+
+if (users.length > 0) console.log(users[0].name); else console.log('User array empty');
+
+*/
 ///////////////////////////
 // The for-of Loop
 
 /*
 const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
-
+ 
 for (const item of menu) {
   console.log(item);
 }
-
+ 
 // for (const item of menu.entries()) {
 //   console.log(`${item[0] + 1}: ${item[1]}`);
 // }
-
+ 
 for (const [i, el] of menu.entries()) {
   console.log(`${i + 1}: ${el}`);
 }
@@ -89,29 +120,29 @@ const rest1 = {
   // numGuests: 20,
   numGuests: 0,
 }
-
+ 
 const rest2 = {
   name: 'La Pizza',
   owner: 'Giovanni Roassi',
 }
-
+ 
 // OR assignment operator
 // rest1.numGuests = rest1.numGuests || 10;
 // rest2.numGuests = rest1.numGuests || 10;
-
+ 
 // rest1.numGuests ||= 10;
 // rest2.numGuests ||= 10;
-
+ 
 // Nullish assignment operator (null or undefined)
 rest1.numGuests ??= 10;
 rest2.numGuests ??= 10;
-
+ 
 // AND assignment operator
 // rest1.owner = rest1.owner && '<ANONYMOUS>';
 // rest2.owner = rest2.owner && '<ANONYMOUS>';
 rest1.owner &&= '<ANONYMOUS>';
 rest2.owner &&= '<ANONYMOUS>';
-
+ 
 console.log(rest1);
 console.log(rest2);
 */
@@ -122,7 +153,7 @@ console.log(rest2);
 restaurant.numGuests = 0;
 const guestsNew = restaurant.numGuests || 10;
 console.log(guestsNew);
-
+ 
 // Nullish: null and undefined (NOT 0 or'')
 const guestCorrect = restaurant.numGuests ?? 10;
 console.log(guestCorrect);
@@ -138,49 +169,49 @@ console.log(3 || 'Jonas'); // 3
 console.log('' || 'Jonas'); // Jonas
 console.log(true || 0); // true
 console.log(undefined || null); // null
-
+ 
 console.log(undefined || 0 || '' || 'Hello' || 23 || null); // Hello
-
+ 
 restaurant.numGuests = 23;
 const guests1 = restaurant.numGuests ? restaurant.numGuests : 10;
 console.log(guests1);
-
+ 
 const guests2 = restaurant.numGuests || 10;
 console.log(guests2);
-
+ 
 console.log('---- AND ----');
 console.log(0 && 'Jonas');
 console.log(7 && 'Jonas');
-
+ 
 console.log('Hello' && 23 && null && 'jonas');
-
+ 
 // Practical example
 if (restaurant.orderPizza) {
   restaurant.orderPizza('mushrooms', 'spinach');
 }
-
+ 
 restaurant.orderPizza && restaurant.orderPizza('mushrooms', 'spinach');
 */
 
 /*
 // Rest Pattern and Parameters
 // Destructuring
-
+ 
 // SPREAD, because on RIGHT side of =
-
+ 
 const arr = [1, 2, ...[3, 4]];
-
+ 
 // REST, because on LEFT side of =
 const [a, b, ...others] = [1, 2, 3, 4, 5];
 console.log(a, b, others);
-
+ 
 const [pizza, , risotto, ...otherFood] = [...restaurant.mainMenu, ...restaurant.starterMenu];
 console.log(pizza, risotto, otherFood);
-
+ 
 // Objects
 const { sat, ...weekdays } = restaurant.openingHours;
 console.log(weekdays);
-
+ 
 // 2) Functions
 const add = function (...numbers) {
   let sum = 0;
@@ -192,14 +223,14 @@ const add = function (...numbers) {
 add(2, 3);
 add(5, 3, 7, 2);
 add(8, 2, 5, 3, 2, 1, 4);
-
+ 
 const x = [23, 5, 7];
 add(...x);
-
+ 
 restaurant.orderPizza('mushrooms', 'onion', 'olives', 'spinach');
-
+ 
 restaurant.orderPizza('mushrooms only');
-
+ 
 */
 
 // const arr = [7, 8, 9];
