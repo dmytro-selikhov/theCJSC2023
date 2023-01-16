@@ -1119,7 +1119,7 @@ console.log(z === window.z);
 // lesson 112 Enhanced Object Literals
 // lesson 113 Optional Chaining (?.)
 // lesson 114 Looping Objects: Object Keys, Values, and Entries
-
+// lesson 115 Coding Challenge #2
 
 
 
