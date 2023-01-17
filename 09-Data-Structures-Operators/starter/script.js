@@ -52,9 +52,67 @@ const restaurant = {
 
 };
 
+/////////////////////
+// Working With Strings - Part 1
+
+const airline = 'TAP Air Portugal';
+const plane = 'A320';
+console.log(plane[0]);
+console.log(plane[1]);
+console.log(plane[2]);
+console.log('B737'[0]);
+
+console.log(airline.length);
+console.log('B737'.length);
+
+console.log(airline.indexOf('r'));
+console.log(airline.lastIndexOf('r'));
+console.log(airline.indexOf('Portugal'));
+console.log(airline.indexOf('portugal')); // -1
+
+console.log(airline.slice(4));
+console.log(airline.slice(4, 7));
 
 
+console.log(airline.slice(0, airline.indexOf(' ')));
+console.log(airline.slice(airline.lastIndexOf(' ') + 1));
 
+console.log(airline.slice(-2));
+console.log(airline.slice(1, -1));
+
+// const checkMiddleSeat2 = function (seat) {
+//   // B and E are middle seats
+//   const char = seat.slice(-1);
+//   if (char === 'B' || char === 'C') {
+//     console.log(`Yes! Your seat ${seat} is in the middle :D!`);
+//   } else {
+//     console.log(`Oh, no! Your seat ${seat} is not in the middle :(!`);
+//   }
+
+// }
+
+const checkMiddleSeat = function (seat) {
+  // B and E are middle seats
+  const s = seat.slice(-1);
+  if (s === 'B' || s === 'E')
+    console.log(`You got the middle seat :(!`);
+  else console.log(`You got lucky :D`);
+}
+
+
+checkMiddleSeat('11B');
+checkMiddleSeat('23C');
+checkMiddleSeat('3E');
+
+console.log(new String('jonas'));
+console.log(typeof new String('jonas'));
+
+console.log(typeof new String('jonas').slice(1));
+
+
+/*
+///////////////////
+// lesson 120 Coding Challenge #3
 
 // Mentors Solution
 const gameEvents = new Map([
@@ -91,7 +149,7 @@ for (const [min, event] of gameEvents) {
   console.log(`[${half} HALF] ${min}: ${event}`);
 }
 
-
+*/
 /*
 
 //////////////////////////

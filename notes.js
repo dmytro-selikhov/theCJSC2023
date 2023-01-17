@@ -1126,7 +1126,7 @@ console.log(z === window.z);
 // lesson 119 Summary: Which Data Structure to Use?
 // lesson 120 Coding Challenge #3
 // lesson 121 Working With Strings - Part 1
-
+// lesson 121 Working With Strings - Part 2
 
 
 
