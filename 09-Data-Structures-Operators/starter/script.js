@@ -109,11 +109,97 @@ console.log(typeof new String('jonas'));
 
 console.log(typeof new String('jonas').slice(1));
 
+console.log(airline.toLowerCase());
+console.log(airline.toUpperCase());
+
+// Fix Capitalization In Name
+const passenger = 'JonAS'; // Jonas
+const passengerLower = passenger.toLowerCase();
+const passengerCorrect = passengerLower[0].toUpperCase() + passengerLower.slice(1);
+console.log(passengerCorrect);
+
+const correctName = function (name) {
+  const nameLower = name.toLowerCase();
+  const nameCorrect = nameLower[0].toUpperCase() + nameLower.slice(1);
+  console.log(nameCorrect);
+  return nameCorrect;
+}
+correctName('maNy');
+correctName('arSIA');
+correctName('tRUFFA')
+
+// Comparing emails
+const email = 'hello@jonas.io';
+const loginEmail = '  Hello@Jonas.Io \n';
+
+const lowerEmail = loginEmail.toLowerCase();
+const trimmedEmail = lowerEmail.trim();
+console.log(trimmedEmail);
+
+const normalizedEmail = loginEmail.toLowerCase().trim();
+console.log(normalizedEmail);
+console.log(email === normalizedEmail);
+
+const checkEmails = function (correctEmail, incorrectEmail) {
+  const normalizedEmail = incorrectEmail.toLowerCase().trim();
+  const result = correctEmail === normalizedEmail
+  console.log(result);
+  return result;
+}
+
+checkEmails('dmytro@selikhov.com', 'Dmytro@SELIKhov.com');
+checkEmails('dmytro@selikhov.com', '  DmyTRo@SELIKhov.com  ');
+checkEmails('dmytro@selikhov.com', '  DmytTRo@SELIKhovv.com  ');
+
+
+// Replacing
+const priceGB = '288,98@';
+const priceUS = priceGB.replace('@', '$').replace(',', '.');
+console.log(priceUS);
+
+const announcement = `All passengers come to boarding door 23. Boarding door 23!`;
+// console.log(announcement);
+// console.log(announcement.replace('door', 'gate'));
+// console.log(announcement.replaceAll('door', 'gate'));
+console.log(announcement.replace(/door/g, 'gate'));
+
+// Booleans
+const newPlane = 'Airbus A320neo';
+console.log(newPlane.includes('A320'));
+console.log(newPlane.includes('Boeing'));
+console.log(newPlane.startsWith('Airb'));
+
+if (newPlane.startsWith('Airbus') && newPlane.endsWith('neo')) {
+  console.log('Part of the NEW AIRbus family');
+}
+
+
+
+// Practice exercise
+const checkBaggage = function (items) {
+  const baggage = items.toLowerCase();
+  if (baggage.includes('knife') || baggage.includes('gun')) {
+    console.log('You are NOT allowed on board');
+  } else {
+    console.log('Welcome aboard!');
+  }
+}
+checkBaggage('I have a laptop, some Food and a pocket Knife')
+checkBaggage('Socks and camera');
+checkBaggage('Got some snaks and a gun for protection');
+
+
+
+
+
+
+
+
 
 /*
 ///////////////////
 // lesson 120 Coding Challenge #3
-
+ 
 // Mentors Solution
 const gameEvents = new Map([
   [17, '⚽️ GOAL'],
@@ -132,26 +218,26 @@ const gameEvents = new Map([
 console.log(gameEvents.values());
 const events = [...new Set(gameEvents.values())];
 console.log(events);
-
+ 
 // 2. 
 gameEvents.delete(64);
-
+ 
 // 3.
 const time = [...gameEvents.keys()].pop();
 console.log(time);
-
+ 
 console.log(`An event happened, on average, every ${time / gameEvents.size} minutes`);
-
+ 
 // 4.
-
+ 
 for (const [min, event] of gameEvents) {
   const half = min <= 45 ? 'FIRST' : 'SECOND';
   console.log(`[${half} HALF] ${min}: ${event}`);
 }
-
+ 
 */
 /*
-
+ 
 //////////////////////////
 const question = new Map([
   ['question', 'What is the best programming language in the world?'],
@@ -163,30 +249,30 @@ const question = new Map([
   [false, 'Try again!'],
 ])
 console.log(question);
-
+ 
 // Convert object to map
 console.log(Object.entries(openingHours));
 const hoursMap = new Map(Object.entries(openingHours));
 console.log(hoursMap);
-
+ 
 // Quiz app
 console.log(question.get('question'));
 for (const [key, value] of question) {
   if (typeof key === 'number') console.log(`Answer ${key}: ${value}`);
 }
-
+ 
 // const answer = Number(prompt('Your answer'));
 const answer = 3;
 console.log(answer);
 console.log(question.get(question.get('correct') === answer));
-
+ 
 // Convert map to array
-
+ 
 console.log(...question);
 // console.log(question.entries());
 console.log([...question.keys()]);
 console.log([...question.values()]);
-
+ 
 */
 
 
