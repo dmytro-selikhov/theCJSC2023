@@ -52,6 +52,28 @@ const restaurant = {
 
 };
 
+
+
+document.body.append(document.createElement('textarea'));
+document.body.append(document.createElement('button'));
+
+// Mentors Solution
+document.querySelector('button').addEventListener('click', function () {
+  const text = document.querySelector('textarea').value;
+  const rows = text.split('\n');
+  console.log(rows);
+  // let output = '';
+
+  for (const [i, row] of rows.entries()) {
+    const [first, second] = row.toLowerCase().trim().split('_');
+    const output = `${first}${second.replace(second[0], second[0].toUpperCase())}`;
+    console.log(`${output.padEnd(20)}${'✅'.repeat(i + 1)}`);
+  }
+});
+
+
+
+/*
 /////////////////////
 // Working With Strings - Part 1
 
@@ -189,6 +211,54 @@ checkBaggage('Socks and camera');
 checkBaggage('Got some snaks and a gun for protection');
 
 
+// Split and join
+console.log('a+very+nice+string'.split('+'));
+console.log('Dmytro Selikhov'.split(' '));
+
+const [firstName, lastName] = 'Dmytro Selikhov'.split(' ');
+
+const newName = ['Mr.', firstName, lastName.toUpperCase()].join(' ');
+console.log(newName);
+
+const capitalizeName = function (name) {
+  const names = name.split(' ');
+  const namesUpper = [];
+  for (const n of names) {
+    // namesUpper.push(n[0].toUpperCase() + n.slice(1));
+    namesUpper.push(n.replace(n[0], n[0].toUpperCase()));
+  }
+  console.log(namesUpper.join(' '));
+};
+
+capitalizeName('jessica and smith davis');
+capitalizeName('dmytro selikhov');
+
+// Padding
+const message = 'Go to gate 23!';
+console.log(message.padStart(25, '+').padEnd(30, '+'));
+console.log('Jonas'.padStart(25, '+').padEnd(30, '+'));
+
+const maskCreditCard = function (number) {
+  const str = number + '';
+  const last = str.slice(-4);
+  return last.padStart(str.length, '*');
+}
+
+console.log(maskCreditCard(3245463645));
+console.log(maskCreditCard(65672685436720));
+console.log(maskCreditCard('327548709830670938763970'));
+
+// Repeat
+const message2 = 'Bad weather... All Departues Delayed...'
+console.log(message2.repeat(5));
+
+const planesInLine = function (n) {
+  console.log(`There are ${n} planes in line ${'🛩️'.repeat(n)}`);
+}
+planesInLine(5);
+planesInLine(3);
+planesInLine(12);
+*/
 
 
 
@@ -226,16 +296,16 @@ gameEvents.delete(64);
 const time = [...gameEvents.keys()].pop();
 console.log(time);
  
-console.log(`An event happened, on average, every ${time / gameEvents.size} minutes`);
- 
+console.log(`An event happened, on average, every ${ time / gameEvents.size} minutes`);
+
 // 4.
- 
+
 for (const [min, event] of gameEvents) {
   const half = min <= 45 ? 'FIRST' : 'SECOND';
   console.log(`[${half} HALF] ${min}: ${event}`);
 }
  
-*/
+* /
 /*
  
 //////////////////////////

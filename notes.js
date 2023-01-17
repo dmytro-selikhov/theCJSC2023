@@ -1128,8 +1128,8 @@ console.log(z === window.z);
 // lesson 121 Working With Strings - Part 1
 // lesson 122 Working With Strings - Part 2
 // lesson 123 Working With Strings - Part 3
-
-
+// lesson 124 Coding Challenge #3
+// lesson 125 String Methods Practice
 
 
 
