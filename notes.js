@@ -1131,6 +1131,8 @@ console.log(z === window.z);
 // lesson 124 Coding Challenge #3
 // lesson 125 String Methods Practice
 // lesson 126 Section Intro
+// lesson 127 Section Roadmap
+// lesson 128 Default Parameters
 
 
 
