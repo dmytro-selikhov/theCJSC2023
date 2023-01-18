@@ -28,6 +28,8 @@ createBooking('LH123', undefined, 1000);
 */
 
 
+
+/*
 ////////////////////////////////////
 // How Passing Arguments Works Value vs. Reference
 
@@ -66,9 +68,12 @@ newPassport(jonas);
 checkIn(flight, jonas);
 console.log(jonas.passport);
 
+*/
 
 
-
+//////////////////////////////
+// First-Class and Higher-Order Functions
+// 
 
 
 
