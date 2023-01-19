@@ -1136,8 +1136,9 @@ console.log(z === window.z);
 // lesson 129 How Passing Arguments Works Value vs. Reference
 // lesson 130 First-Class and Higher-Order Functions
 // lesson 131 Functions Accepting Callback Functions
-
-
+// lesson 132 Functions Returning Functions
+// lesson 133 The call and apply Methods
+// test text
 
 
 

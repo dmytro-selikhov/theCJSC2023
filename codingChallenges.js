@@ -967,11 +967,11 @@ document.querySelector('button').addEventListener('click', function () {
 // delayed_departure
 
 
-underscore_case
-first_name
-Some_Variable
-calculate_AGE
-delayed_departure
+// underscore_case
+// first_name
+// Some_Variable
+// calculate_AGE
+// delayed_departure
 
 
 
