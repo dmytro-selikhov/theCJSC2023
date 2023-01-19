@@ -1138,9 +1138,9 @@ console.log(z === window.z);
 // lesson 131 Functions Accepting Callback Functions
 // lesson 132 Functions Returning Functions
 // lesson 133 The call and apply Methods
-// lesson 134 The bind Method
-
-
+// lesson 134 The bind Method !!!!!!! => ПОЧИТАТЬ ДОПОЛНИТЕЛЬНО
+// lesson 135 Coding Challenge #1
+// lesson 136 Immediately Invoked Function Expressions (IIFE)
 
 
 
