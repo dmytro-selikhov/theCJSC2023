@@ -1142,9 +1142,11 @@ console.log(z === window.z);
 // lesson 135 Coding Challenge #1
 // lesson 136 Immediately Invoked Function Expressions (IIFE)
 // lesson 137 Closures
-
-
-
+// lesson 138 More Closure Examples
+// lesson 139 Coding Challenge #2
+// lesson 140 Section Intro
+// lesson 141 Section Roadmap
+// lesson 142 Simple Array Methods
 
 
 
