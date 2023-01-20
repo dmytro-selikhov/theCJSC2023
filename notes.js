@@ -1141,7 +1141,7 @@ console.log(z === window.z);
 // lesson 134 The bind Method !!!!!!! => ПОЧИТАТЬ ДОПОЛНИТЕЛЬНО
 // lesson 135 Coding Challenge #1
 // lesson 136 Immediately Invoked Function Expressions (IIFE)
-
+// lesson 137 Closures
 
 
 
