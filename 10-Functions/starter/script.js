@@ -220,7 +220,7 @@ lufthansa.buyPlane = function () {
 
 document.querySelector('.buy').addEventListener('click', lufthansa.buyPlane.bind(lufthansa)); // Используем метод .bind() для того что бы переопределить this на функцию. Без метода .bind() this указывает на html тэг.
 
-// Partial application 
+// Partial application
 
 const addTax = (rate, value) => value + value * rate;
 
@@ -327,12 +327,15 @@ poll.displayResults.call({ answers: [1, 5, 3, 9, 6, 1] });
 
 */
 
+
+/*
 // Mentors Solution
+
 
 const poll = {
   question: "What is your favourite programming language?",
   options: ["0: JavaScript", "1: Python", "2: Rust", "3: C++"],
-  // This generates [0, 0, 0, 0]. More in the next section! 
+  // This generates [0, 0, 0, 0]. More in the next section!
   answers: new Array(4).fill(0),
   registerNewAnswer() {
     // Get answer
@@ -366,6 +369,44 @@ poll.displayResults.call({ answers: [1, 5, 3, 9, 6, 1] });
 
 // [5, 2, 3]
 // [1, 5, 3, 9, 6, 1]
+
+*/
+
+////////////////////////////////
+// Immediately Invoked Function Expressions (IIFE)
+const runOnce = function () {
+  console.log('This will never run again');
+}
+runOnce();
+
+(function () {
+  console.log('This will never run again');
+})();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
