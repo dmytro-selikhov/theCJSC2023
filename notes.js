@@ -1148,8 +1148,9 @@ console.log(z === window.z);
 // lesson 141 Section Roadmap
 // lesson 142 Simple Array Methods
 // lesson 143 The new at Method
-
-
+// lesson 144 Looping Arrays: forEach
+// lesson 145 forEach With Maps and Sets
+// lesson 146 PROJECT: "Bankist" App
 
 
 
