@@ -1153,6 +1153,7 @@ console.log(z === window.z);
 // lesson 146 PROJECT: "Bankist" App
 // lesson 147 Creating DOM Elements
 // lesson 148 Coding Challenge #1
+// lesson 149 Data Transformations: map, filter, reduce
 
 
 
