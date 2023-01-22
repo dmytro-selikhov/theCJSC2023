@@ -1156,7 +1156,7 @@ console.log(z === window.z);
 // lesson 149 Data Transformations: map, filter, reduce
 // lesson 150 The map Method
 // lesson 151 Computing Usernames
-
+// lesson 152 The filter Method
 
 
 
