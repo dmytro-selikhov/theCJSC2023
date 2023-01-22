@@ -214,6 +214,8 @@ currenciesUniqe.forEach(function (value, _, map) {
 // PROJECT: "Bankist" App
 // Creating DOM Elements
 
+//////////////////////
+// Data Transformations: map, filter, reduce
 
 
 

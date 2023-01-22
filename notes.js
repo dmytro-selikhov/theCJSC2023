@@ -1154,7 +1154,7 @@ console.log(z === window.z);
 // lesson 147 Creating DOM Elements
 // lesson 148 Coding Challenge #1
 // lesson 149 Data Transformations: map, filter, reduce
-
+// lesson 150 The map Method
 
 
 
