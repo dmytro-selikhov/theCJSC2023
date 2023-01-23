@@ -1157,8 +1157,8 @@ console.log(z === window.z);
 // lesson 150 The map Method
 // lesson 151 Computing Usernames
 // lesson 152 The filter Method
-
-
+// lesson 153 The reduce Method
+// test text 
 
 
 
