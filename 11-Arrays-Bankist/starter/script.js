@@ -293,7 +293,7 @@ const withdrawals = movements.filter(mov => mov < 0);
 console.log(withdrawals);
 */
 
-
+/*
 ////////////////////////////
 //The reduce Method
 
@@ -312,7 +312,7 @@ let balance2 = 0;
 for (const mov of movements) balance2 += mov;
 console.log(balance2);
 
-// Maximum value 
+// Maximum value
 const max = movements.reduce((acc, mov) => {
   if (acc > mov) {
     return acc
@@ -321,15 +321,55 @@ const max = movements.reduce((acc, mov) => {
   }
 }, movements[0]);
 console.log(max);
+*/
+/*
+const calcAverageHumanAge = function (ages) {
+  console.log(ages);
+  // 1.
+  const humanAge = ages.map((el) => {
+    if (el <= 2) {
+      return 2 * el;
+    } else {
+      return 16 + el * 4;
+    }
+  })
+  console.log(humanAge);
 
+  // 2.
+  const olderThan18 = humanAge.filter((el) => el > 18);
+  console.log(olderThan18);
+  // 3.
+  const ageTotal = olderThan18.reduce((acc, el) => {
+    return acc += el;
+  }, 0);
+  console.log(ageTotal);
+  const fnResult = ageTotal / olderThan18.length;
+  console.log(fnResult);
+  return fnResult;
+}
+calcAverageHumanAge([5, 2, 4, 1, 15, 8, 3]);
+calcAverageHumanAge([16, 6, 10, 5, 6, 1, 4]);
+*/
+/*
+// Mentors Solution
 
+const calcAverageHumanAge = function (ages) {
+  const humanAges = ages.map(age => age <= 2 ? 2 * age : 16 + age * 4);
+  const adults = humanAges.filter(age => age >= 18);
+  console.log(humanAges);
+  console.log(adults);
 
+  // const average = adults.reduce((acc, age) => acc + age, 0) / adults.length;
+  const average = adults.reduce((acc, age) => acc + age / adults.length, 0);
 
+  // 2 3. (2 + 3) / 2 = 2.5. === 2/2+3/2 = 2.5
 
-
-
-
-
+  return average;
+}
+const avg1 = calcAverageHumanAge([5, 2, 4, 1, 15, 8, 3]);
+const avg2 = calcAverageHumanAge([16, 6, 10, 5, 6, 1, 4]);
+console.log(avg1, avg2);
+*/
 
 
 

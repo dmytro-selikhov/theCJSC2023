@@ -1154,6 +1154,8 @@ Test data:
 Hints: Use tools from all lectures in this section so far 😉
 */
 
+
+/*
 // Solution
 
 let Julia1 = [3, 5, 2, 12, 7];
@@ -1203,6 +1205,74 @@ const checkDogs2 = function (dogsJulia, dogsKate) {
 
 checkDogs([3, 5, 2, 12, 7], [4, 1, 15, 8, 3]);
 checkDogs([9, 16, 6, 8, 3], [10, 5, 6, 1, 4]);
+*/
+
+
+//////////////////////////////////////
+// Coding Challenge #2
+
+/**
+ * Let's go back to Julia and Kate's study about dogs. This time, they want to convert dog ages to human ages and calculate the average age of the dogs in their study.
+Your tasks:
+Create a function 'calcAverageHumanAge', which accepts an arrays of dog's ages ('ages'), and does the following things in order:
+1. Calculatethedogageinhumanyearsusingthefollowingformula:ifthedogis <= 2 years old, humanAge = 2 * dogAge. If the dog is > 2 years old, humanAge = 16 + dogAge * 4
+2. Excludealldogsthatarelessthan18humanyearsold(whichisthesameas keeping dogs that are at least 18 years old)
+3. Calculatetheaveragehumanageofalladultdogs(youshouldalreadyknow from other challenges how we calculate averages 😉)
+4. Runthefunctionforbothtestdatasets
+Test data:
+§ Data1:[5,2,4,1,15,8,3] § Data2:[16,6,10,5,6,1,4]
+
+ */
+/*
+// Solution
+const calcAverageHumanAge = function (ages) {
+  console.log(ages);
+  // 1.
+  const humanAge = ages.map((el) => {
+    if (el <= 2) {
+      return 2 * el;
+    } else {
+      return 16 + el * 4;
+    }
+  })
+  console.log(humanAge);
+  // 2.
+  const olderThan18 = humanAge.filter((el) => el > 18);
+  console.log(olderThan18);
+  // 3.
+  const ageTotal = olderThan18.reduce((acc, el) => {
+    return acc += el;
+  }, 0);
+  console.log(ageTotal);
+  const fnResult = ageTotal / olderThan18.length;
+  console.log(fnResult);
+  return fnResult;
+}
+calcAverageHumanAge([5, 2, 4, 1, 15, 8, 3]); // 44
+calcAverageHumanAge([16, 6, 10, 5, 6, 1, 4]); // 47.3
+*/
+/*
+// Mentors Solution
+const calcAverageHumanAge = function (ages) {
+  const humanAges = ages.map(age => age <= 2 ? 2 * age : 16 + age * 4);
+  const adults = humanAges.filter(age => age >= 18);
+  console.log(humanAges);
+  console.log(adults);
+
+  // const average = adults.reduce((acc, age) => acc + age, 0) / adults.length;
+  const average = adults.reduce((acc, age, i, arr) => acc + age / arr.length, 0);
+
+  // 2 3. (2 + 3) / 2 = 2.5. === 2/2+3/2 = 2.5
+
+  return average;
+}
+const avg1 = calcAverageHumanAge([5, 2, 4, 1, 15, 8, 3]);
+const avg2 = calcAverageHumanAge([16, 6, 10, 5, 6, 1, 4]);
+console.log(avg1, avg2);
+*/
+
+
+
 
 
 
