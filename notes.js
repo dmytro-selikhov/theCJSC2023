@@ -1161,8 +1161,8 @@ console.log(z === window.z);
 // lesson 154 Coding Challenge #2
 // lesson 155 The Magic of Chaining Methods
 // lesson 156 Coding Challenge #3
-
-
+// lesson 157 The find Method
+// lesson 158 Implementing Login
 
 
 
