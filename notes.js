@@ -1164,8 +1164,8 @@ console.log(z === window.z);
 // lesson 157 The find Method
 // lesson 158 Implementing Login
 // lesson 159 Implementing Login
-
-
+// lesson 160 The findIndex Method
+// lesson 161 Some and every
 
 
 
