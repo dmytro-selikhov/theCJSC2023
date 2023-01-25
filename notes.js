@@ -1166,9 +1166,9 @@ console.log(z === window.z);
 // lesson 159 Implementing Login
 // lesson 160 The findIndex Method
 // lesson 161 Some and every
-
-
-
+// lesson 162 Flat and flatMap
+// lesson 163 Sorting Arrays
+// lesson 164 More Ways of Creating and Filling Arrays
 
 
 
