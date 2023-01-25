@@ -636,6 +636,8 @@ labelBalance.addEventListener('click', function () {
 })
 */
 
+////////////////////////////////////////
+// Summary: Which Array Method to Use?
 
 
 
