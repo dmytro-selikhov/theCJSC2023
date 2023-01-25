@@ -1169,7 +1169,7 @@ console.log(z === window.z);
 // lesson 162 Flat and flatMap
 // lesson 163 Sorting Arrays
 // lesson 164 More Ways of Creating and Filling Arrays
-
+// lesson 165 Summary: Which Array Method to Use?
 
 
 
