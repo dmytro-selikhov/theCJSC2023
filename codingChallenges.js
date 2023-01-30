@@ -1430,20 +1430,23 @@ const ownersEatTooLittle = dogs
 console.log(ownersEatTooLittle);
 
 // 4.
-"Matilda and Alice and Bob's dogs eat too much!"
-"Sarah and John and Michael's dogs eat too little!"
+// "Matilda and Alice and Bob's dogs eat too much!"
+// "Sarah and John and Michael's dogs eat too little!"
 
+console.log(`${ownersEatTooMuch.join(' and ')}'s dogs eat too much!`);
+console.log(`${ownersEatTooLittle.join(' and ')}'s dogs eat too little!`);
 
+// 5. 
+console.log(dogs.some(dog => dog.curFood === dog.recFood));
 
+// 6.
+const checkEatingOkay = dog => dog.curFood > dog.recFood * 0.9 && dog.curFood < dog.recFood * 1.1;
+console.log(dogs.some(checkEatingOkay));
 
+// 7. 
+console.log(dogs.filter(checkEatingOkay));
 
-
-
-
-
-
-
-
+// 8. 
 
 
 
