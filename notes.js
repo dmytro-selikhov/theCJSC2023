@@ -1172,6 +1172,10 @@ console.log(z === window.z);
 // lesson 165 Summary: Which Array Method to Use?
 // lesson 166 Array Methods Practice
 // lesson 167 Coding Challenge #4
+// lesson 168 Section Intro
+// lesson 169 Section Roadmap
+// lesson 170 Converting and Checking Numbers
+
 
 
 
