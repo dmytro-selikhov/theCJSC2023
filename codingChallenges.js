@@ -1417,6 +1417,39 @@ const dogSarah = dogs.find(dog => dog.owners.includes('Sarah'));
 console.log(dogSarah);
 console.log(`Sarah's dog is eating too ${dogSarah.curFood > dogSarah.recFood ? 'much' : 'little'} `);
 
+// 3. 
+const ownersEatTooMuch = dogs
+.filter(dog => dog.curFood > dog.recFood)
+.flatMap(dog => dog.owners)
+// .flat();
+console.log(ownersEatTooMuch);
+
+const ownersEatTooLittle = dogs
+.filter(dog => dog.curFood < dog.recFood)
+.flatMap(dog => dog.owners);
+console.log(ownersEatTooLittle);
+
+// 4.
+"Matilda and Alice and Bob's dogs eat too much!"
+"Sarah and John and Michael's dogs eat too little!"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
