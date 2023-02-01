@@ -1175,7 +1175,61 @@ console.log(z === window.z);
 // lesson 168 Section Intro
 // lesson 169 Section Roadmap
 // lesson 170 Converting and Checking Numbers
-// lesson 170 in progress test text
+// lesson 171 Math and Rounding
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
