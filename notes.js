@@ -1177,7 +1177,7 @@ console.log(z === window.z);
 // lesson 170 Converting and Checking Numbers
 // lesson 171 Math and Rounding
 // lesson 172 The Remainder Operator
-
+// test text
 
 
 
