@@ -1178,6 +1178,7 @@ console.log(z === window.z);
 // lesson 171 Math and Rounding
 // lesson 172 The Remainder Operator
 // lesson 173 Numeric Separators
+// lesson 174 Working with BigInt
 
 
 
