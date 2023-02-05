@@ -399,8 +399,69 @@ console.log(PI);
 console.log(Number('230000'));
 */
 
+/*
 ///////////////////////////////////////
 // lesson 174 Working with BigInt
+
+console.log(2 ** 53 - 1);
+console.log(Number.MAX_SAFE_INTEGER);
+console.log(2 ** 53 + 1);
+console.log(2 ** 53 + 2);
+console.log(2 ** 53 + 3);
+console.log(2 ** 53 + 4);
+
+console.log(35876569235762396535769863598623587658654876587657976592386594865n);
+console.log(BigInt(358765692))
+
+// Operations
+console.log(10000n + 10000n);
+console.log(3576534343453453543453543n * 1000000n);
+// console.log(Math.sqrt(16n));
+
+const huge = 2023257746878672384757249857298509238n;
+
+const num = 23;
+
+console.log(huge * num); // Cannot mix BigInt and other types
+console.log(huge * BigInt(num));
+
+// Exeptions
+console.log(20n > 15); // true
+console.log(20n === 20); // false
+console.log(typeof 20n); // bigint
+console.log(20n == 20); // true
+console.log(20n == '20'); // true
+
+console.log(huge + ' is REALLY big!!!');
+ 
+// Divisions
+console.log(11n / 3n ); // 3n
+console.log(10 / 3); // 3.333333333333333333333333...
+*/
+
+
+//////////////////////////////
+// lesson 175 Creating Dates
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
