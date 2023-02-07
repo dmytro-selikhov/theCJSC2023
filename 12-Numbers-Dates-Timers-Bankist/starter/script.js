@@ -521,11 +521,15 @@ console.log(future);
 //////////////////////////////////////
 // lesson 176 Adding Dates to "Bankist" App
 
+///////////////////////////////////////////
+// lesson 177 Operations With Dates
 
+const future = new Date(2037, 10, 19, 15, 23);
+console.log(Number(future));
+console.log(+future);
+const calcDaysPassed = (date1, date2) => (date2 - date1);
 
-
-
-
+calcDaysPassed(new Date(2037, 10, 19, 15, 23),)
 
 
 
