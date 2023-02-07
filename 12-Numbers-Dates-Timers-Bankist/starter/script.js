@@ -21,9 +21,9 @@ const account1 = {
     '2020-01-28T09:15:04.904Z',
     '2020-04-01T10:17:24.185Z',
     '2020-05-08T14:11:59.604Z',
-    '2020-05-27T17:01:17.194Z',
-    '2020-07-11T23:36:17.929Z',
-    '2020-07-12T10:51:36.790Z',
+    '2023-02-03T17:01:17.194Z',
+    '2023-02-06T23:36:17.929Z',
+    '2023-02-07T10:51:36.790Z',
   ],
   currency: 'EUR',
   locale: 'pt-PT', // de-DE
@@ -81,6 +81,23 @@ const inputClosePin = document.querySelector('.form__input--pin');
 /////////////////////////////////////////////////
 // Functions
 
+const formatMovementDate = function(date){
+  const calcDaysPassed = (date1, date2) => Math.round(Math.abs((date2 - date1) / (1000 
+  * 60 * 60 * 24)));
+  const daysPassed = calcDaysPassed(new Date(), date);
+  console.log(daysPassed);
+
+  if (daysPassed === 0) return 'Today';
+  if (daysPassed === 1) return 'Yesterday';
+  if (daysPassed <= 7) return `${daysPassed} days ago`;
+  
+  const day = `${date.getDate()}`.padStart(2, 0); // add 0 before number, if only 1 number in line
+  const month = `${date.getMonth() + 1}`.padStart(2, 0); // add 0 before number, if only 1 number in line
+  const year = date.getFullYear();
+
+  return `${day}/${month}/${year}`;     
+}
+
 const displayMovements = function (acc, sort = false) {
   containerMovements.innerHTML = '';
 
@@ -88,14 +105,8 @@ const displayMovements = function (acc, sort = false) {
 
   movs.forEach(function (mov, i) {
     const type = mov > 0 ? 'deposit' : 'withdrawal';
-
     const date = new Date(acc.movementsDates[i]);
-
-    const day = `${date.getDate()}`.padStart(2, 0); // add 0 before number, if only 1 number in line
-    const month = `${date.getMonth() + 1}`.padStart(2, 0); // add 0 before number, if only 1 number in line
-    const year = date.getFullYear();
-
-    const displayDate = `${day}/${month}/${year}`;
+     const displayDate = formatMovementDate(date);
 
     const html = `
       <div class="movements__row">
@@ -521,15 +532,37 @@ console.log(future);
 //////////////////////////////////////
 // lesson 176 Adding Dates to "Bankist" App
 
+/*
 ///////////////////////////////////////////
 // lesson 177 Operations With Dates
 
 const future = new Date(2037, 10, 19, 15, 23);
 console.log(Number(future));
 console.log(+future);
-const calcDaysPassed = (date1, date2) => (date2 - date1);
+const calcDaysPassed = (date1, date2) => Math.abs((date2 - date1) / (1000 
+  * 60 * 60 * 24));
 
-calcDaysPassed(new Date(2037, 10, 19, 15, 23),)
+const days1 = calcDaysPassed(new Date(2037, 3, 4), new Date(2037, 3, 14));
+console.log(days1);
+
+ */
+
+/////////////////////////////////////
+// lesson 178 Internationalizing Dates (Intl)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
