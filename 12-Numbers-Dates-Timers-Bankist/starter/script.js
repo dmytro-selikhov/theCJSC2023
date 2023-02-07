@@ -91,9 +91,8 @@ const displayMovements = function (movements, sort = false) {
 
     const html = `
       <div class="movements__row">
-        <div class="movements__type movements__type--${type}">${
-      i + 1
-    } ${type}</div>
+        <div class="movements__type movements__type--${type}">${i + 1
+      } ${type}</div>
         <div class="movements__value">${mov.toFixed(2)}€</div>
       </div>
     `;
@@ -166,9 +165,8 @@ btnLogin.addEventListener('click', function (e) {
 
   if (currentAccount?.pin === +inputLoginPin.value) {
     // Display UI and message
-    labelWelcome.textContent = `Welcome back, ${
-      currentAccount.owner.split(' ')[0]
-    }`;
+    labelWelcome.textContent = `Welcome back, ${currentAccount.owner.split(' ')[0]
+      }`;
     containerApp.style.opacity = 100;
 
     // Clear input fields
@@ -377,7 +375,7 @@ labelBalance.addEventListener('click', function() {
 
 })
 */
- 
+
 /*
  /////////////////////////////////////////
  // lesson 173 Numeric Separators
@@ -444,26 +442,42 @@ console.log(10 / 3); // 3.333333333333333333333333...
 // lesson 175 Creating Dates
 
 
+// Create a date
 
+/*
+const now = new Date();
+console.log(now);
 
+console.log(new Date('Feb 07 2023 10:53:43'));
+console.log(new Date('December 24, 2015'));
+console.log(new Date(account1.movementsDates[0]));
 
+console.log(new Date(2037, 10, 19, 15, 23, 5));
+console.log(new Date(2037, 10, 33));
 
+console.log(new Date(0));
+console.log(new Date(3 * 24 * 60 * 60 * 1000));
+*/
 
+// Working with dates
+const future = new Date(2037, 10, 19, 15, 23);
+console.log(future);
+console.log(future.getFullYear(), 'year'); // 2037 => year
+console.log(future.getMonth(), 'numer of the monts + 1'); // 10 => 0 based (real number of this months +1);
+console.log(future.getDate(), 'date of the months'); // 19 =>  date of the month
+console.log(future.getDay(), 'day of the week'); // 4 => day of the week
+console.log(future.getHours(), 'hours'); // 15 => hours
+console.log(future.getMinutes(), 'minutes'); // 24 => minutes
+console.log(future.getSeconds(), 'seconds'); // 0 => seconds
 
+console.log(future.toISOString()); // 2037-11-19T13:23:00.000Z
+console.log(future.getTime());
+console.log(new Date(2142249780000));
 
+console.log(Date.now()); // Time now
 
-
-
-
-
-
-
-
-
-
-
-
-
+future.setFullYear(2040);
+console.log(future);
 
 
 

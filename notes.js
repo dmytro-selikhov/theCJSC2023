@@ -1180,7 +1180,7 @@ console.log(z === window.z);
 // lesson 173 Numeric Separators
 // lesson 174 Working with BigInt
 // lesson 175 Creating Dates
-// test text
+// lesson 176 Adding Dates to "Bankist" App
 
 
 
