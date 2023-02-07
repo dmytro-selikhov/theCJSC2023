@@ -1183,7 +1183,7 @@ console.log(z === window.z);
 // lesson 176 Adding Dates to "Bankist" App
 // lesson 177 Operations With Dates
 // lesson 178 Internationalizing Dates (Intl)
-
+// lesson 179 Internationalizing Numbers (Intl)
 
 
 
