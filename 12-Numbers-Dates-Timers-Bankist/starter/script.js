@@ -275,7 +275,8 @@ btnLoan.addEventListener('click', function (e) {
   const amount = Math.floor(inputLoanAmount.value);
 
   if (amount > 0 && currentAccount.movements.some(mov => mov >= amount * 0.1)) {
-    // Add movement
+  
+   setTimeout(function(){ // Add movement
     currentAccount.movements.push(amount);
 
     // Add loan date
@@ -284,6 +285,7 @@ btnLoan.addEventListener('click', function (e) {
 
     // Update UI
     updateUI(currentAccount);
+   }, 2500);
   }
   inputLoanAmount.value = '';
 });
@@ -593,9 +595,45 @@ console.log('Syria:', new Intl.NumberFormat('ar-SY', options).format(num));
 console.log(navigator.language, new Intl.NumberFormat(navigator.language, options).format(num));
  */
 
-
+/*
 ////////////////////////////////////////
 // lesson 180 Timers_ setTimeout and setInterval
+
+// setTimeout
+const ingredients = ['olives', 'brokkoli']; 
+const pizzaTimer = setTimeout((ing1, ing2) => console.log(`Here is your pizza! With ${ing1} and ${ing2}))`), 3000, ...ingredients);
+
+console.log('Waiting...')
+if (ingredients.includes('spinsch')) clearTimeout(pizzaTimer);
+
+// setInterval
+setInterval(function(){
+  const now = new Date();
+  console.log(now);
+}, 2000);
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
