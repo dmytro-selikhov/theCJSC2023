@@ -81,18 +81,27 @@ const inputClosePin = document.querySelector('.form__input--pin');
 /////////////////////////////////////////////////
 // Functions
 
-const displayMovements = function (movements, sort = false) {
+const displayMovements = function (acc, sort = false) {
   containerMovements.innerHTML = '';
 
-  const movs = sort ? movements.slice().sort((a, b) => a - b) : movements;
+  const movs = sort ? acc.movements.slice().sort((a, b) => a - b) : acc.movements;
 
   movs.forEach(function (mov, i) {
     const type = mov > 0 ? 'deposit' : 'withdrawal';
+
+    const date = new Date(acc.movementsDates[i]);
+
+    const day = `${date.getDate()}`.padStart(2, 0); // add 0 before number, if only 1 number in line
+    const month = `${date.getMonth() + 1}`.padStart(2, 0); // add 0 before number, if only 1 number in line
+    const year = date.getFullYear();
+
+    const displayDate = `${day}/${month}/${year}`;
 
     const html = `
       <div class="movements__row">
         <div class="movements__type movements__type--${type}">${i + 1
       } ${type}</div>
+        <div class="movements__date">${displayDate}</div>
         <div class="movements__value">${mov.toFixed(2)}€</div>
       </div>
     `;
@@ -141,7 +150,7 @@ createUsernames(accounts);
 
 const updateUI = function (acc) {
   // Display movements
-  displayMovements(acc.movements);
+  displayMovements(acc);
 
   // Display balance
   calcDisplayBalance(acc);
@@ -153,6 +162,16 @@ const updateUI = function (acc) {
 ///////////////////////////////////////
 // Event handlers
 let currentAccount;
+
+// FAKE ALWAYS LOGGED IN
+currentAccount = account1;
+updateUI(currentAccount);
+containerApp.style.opacity = 100;
+
+
+
+
+// day/month/year
 
 btnLogin.addEventListener('click', function (e) {
   // Prevent form from submitting
@@ -168,6 +187,16 @@ btnLogin.addEventListener('click', function (e) {
     labelWelcome.textContent = `Welcome back, ${currentAccount.owner.split(' ')[0]
       }`;
     containerApp.style.opacity = 100;
+
+    // Create current date and time
+    const now = new Date();
+    const day = `${now.getDate()}`.padStart(2, 0); // add 0 before number, if only 1 number in line
+    const month = `${now.getMonth() + 1}`.padStart(2, 0); // add 0 before number, if only 1 number in line
+    const year = now.getFullYear();
+    const hour = `${now.getHours()}`.padStart(2, 0);
+    const min = `${now.getMinutes()}`.padStart(2, 0);
+
+    labelDate.textContent = `${day}/${month}/${year}, ${hour}:${min}`;
 
     // Clear input fields
     inputLoginUsername.value = inputLoginPin.value = '';
@@ -196,6 +225,10 @@ btnTransfer.addEventListener('click', function (e) {
     currentAccount.movements.push(-amount);
     receiverAcc.movements.push(amount);
 
+    // Add transfer date
+    currentAccount.movementsDates.push(new Date().toISOString());
+    receiverAcc.movementsDates.push(new Date().toISOString());
+
     // Update UI
     updateUI(currentAccount);
   }
@@ -209,6 +242,10 @@ btnLoan.addEventListener('click', function (e) {
   if (amount > 0 && currentAccount.movements.some(mov => mov >= amount * 0.1)) {
     // Add movement
     currentAccount.movements.push(amount);
+
+    // Add loan date
+    currentAccount.movementsDates.push(new Date().toISOString());
+
 
     // Update UI
     updateUI(currentAccount);
@@ -254,14 +291,14 @@ btnSort.addEventListener('click', function (e) {
 /*
 console.log(23 === 23.0);
 
-// Base 10 - 0 to 9 1/10 = 0.1 3/10 = 3.333333333 
+// Base 10 - 0 to 9 1/10 = 0.1 3/10 = 3.333333333
 // Binary base 2 - 0 1
 console.log(0.1 + 0.2);
 console.log(0.1 + 0.2 === 0.3);
 
 // Convertion
 console.log(Number('23'));
-console.log(+'23'); 
+console.log(+'23');
 
 // Parsing
 console.log(Number.parseInt('30px', 10)); // 30
@@ -311,13 +348,13 @@ console.log(Math.trunc(Math.random() * 6) + 1); // random value between 1 - 6
 
 // Random number generator function
 const randomInt = (min, max) => Math.floor(Math.random() * (max - min) + 1) + min;
-// 0 ... 1 -> 0 ... (max - min) -> min ... max 
+// 0 ... 1 -> 0 ... (max - min) -> min ... max
 // console.log(randomInt(10,20));
 
 // Rounding integers
 console.log(Math.round(23.3)); // 23
 console.log(Math.round(23.9)); // 24
-  
+
 console.log(Math.ceil(23.3)); // 23
 console.log(Math.ceil(23.9)); // 24
 
@@ -346,11 +383,11 @@ console.log(+(2.345).toFixed(2)); // 2.35
 console.log(5 % 2); // 1
 console.log(5 / 2); // 5 = 2 * 2 + 1
 
-console.log(8 % 3); // 
+console.log(8 % 3); //
 console.log(8 / 3); // 8 = 2 * 3 + 2
 
 console.log(6 % 2); // 0
-console.log(6 / 2); 
+console.log(6 / 2);
 
 
 console.log(7 % 2); // 1
@@ -363,14 +400,14 @@ console.log(isEven(23)); // false
 console.log(isEven(514)); // true
 
 labelBalance.addEventListener('click', function() {
-  
+
   [...document.querySelectorAll('.movements__row')].forEach(function(row, i) {
- 
+
   // 0, 2, 4, 6 ...
   if (i % 2 === 0) row.style.backgroundColor = 'orangered';
- 
+
   // 0, 3, 6, 9 ...
-  if (i % 3 === 0) row.style.backgroundColor = 'blue'; 
+  if (i % 3 === 0) row.style.backgroundColor = 'blue';
 });
 
 })
@@ -381,7 +418,7 @@ labelBalance.addEventListener('click', function() {
  // lesson 173 Numeric Separators
 
 // 287, 460, 000, 000
-const diameter = 287_460_000_000; 
+const diameter = 287_460_000_000;
 console.log(diameter);
 
 const price = 345_99;
@@ -431,7 +468,7 @@ console.log(20n == 20); // true
 console.log(20n == '20'); // true
 
 console.log(huge + ' is REALLY big!!!');
- 
+
 // Divisions
 console.log(11n / 3n ); // 3n
 console.log(10 / 3); // 3.333333333333333333333333...
@@ -458,7 +495,7 @@ console.log(new Date(2037, 10, 33));
 console.log(new Date(0));
 console.log(new Date(3 * 24 * 60 * 60 * 1000));
 */
-
+/*
 // Working with dates
 const future = new Date(2037, 10, 19, 15, 23);
 console.log(future);
@@ -478,7 +515,11 @@ console.log(Date.now()); // Time now
 
 future.setFullYear(2040);
 console.log(future);
+*/
 
+
+//////////////////////////////////////
+// lesson 176 Adding Dates to "Bankist" App
 
 
 
