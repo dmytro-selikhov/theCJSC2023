@@ -185,14 +185,44 @@ const updateUI = function (acc) {
   calcDisplaySummary(acc);
 };
 
+const startLogOutTimer = function(){
+
+  const tick = function(){
+    const min = String(Math.trunc(time / 60)).padStart(2, 0);
+    const sec = String(time % 60).padStart(2, 0);
+    // In each call, print the remaining time to UI
+    labelTimer.textContent = `${min}:${sec}`;
+
+    // When 0 seconds, stop timer and log out user
+    if (time === 0){
+      clearInterval(timer);
+      labelWelcome.textContent = `Log in to get started`;
+       containerApp.style.opacity = 0;
+    }
+    
+    // Decrese 1s
+    time--;
+  }
+
+  // Set time to 5 minutes
+  let time = 600;
+  // time = 60;
+
+  // Call the timer every second
+ tick();
+ const timer =  setInterval(tick, 1000);
+
+ return timer;
+
+}
+
 ///////////////////////////////////////
 // Event handlers
-let currentAccount;
-
+let currentAccount, timer;
 // FAKE ALWAYS LOGGED IN
-currentAccount = account1;
-updateUI(currentAccount);
-containerApp.style.opacity = 100;
+// currentAccount = account1;
+// updateUI(currentAccount);
+// containerApp.style.opacity = 100;
 
 btnLogin.addEventListener('click', function (e) {
   // Prevent form from submitting
@@ -237,6 +267,10 @@ btnLogin.addEventListener('click', function (e) {
     inputLoginUsername.value = inputLoginPin.value = '';
     inputLoginPin.blur();
 
+    // Timer
+    if(timer) clearInterval(timer);
+    timer = startLogOutTimer();
+
     // Update UI
     updateUI(currentAccount);
   }
@@ -266,6 +300,10 @@ btnTransfer.addEventListener('click', function (e) {
 
     // Update UI
     updateUI(currentAccount);
+
+    // Reset timer
+    clearInterval(timer);
+    timer = startLogOutTimer();
   }
 });
 
@@ -288,6 +326,10 @@ btnLoan.addEventListener('click', function (e) {
    }, 2500);
   }
   inputLoanAmount.value = '';
+
+  // Reset timer
+  clearInterval(timer);
+  timer = startLogOutTimer();
 });
 
 btnClose.addEventListener('click', function (e) {
@@ -565,8 +607,7 @@ console.log(future);
 const future = new Date(2037, 10, 19, 15, 23);
 console.log(Number(future));
 console.log(+future);
-const calcDaysPassed = (date1, date2) => Math.abs((date2 - date1) / (1000 
-  * 60 * 60 * 24));
+const calcDaysPassed = (date1, date2) => Math.abs((date2 - date1) / (1000  * 60 * 60 * 24));
 
 const days1 = calcDaysPassed(new Date(2037, 3, 4), new Date(2037, 3, 14));
 console.log(days1);
