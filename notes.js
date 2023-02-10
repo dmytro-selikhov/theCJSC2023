@@ -1192,7 +1192,7 @@ console.log(z === window.z);
 // lesson 185 How the DOM Really Works
 // lesson 186 Selecting, Creating, and Deleting Elements
 // lesson 187 Styles, Attributes and Classes
-
+// lesson 188 Implementing Smooth Scrolling
 
 
 
