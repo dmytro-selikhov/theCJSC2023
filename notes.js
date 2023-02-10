@@ -1190,7 +1190,7 @@ console.log(z === window.z);
 // lesson 183 Section Roadmap
 // lesson 184 PROJECT: "Bnkist Website"
 // lesson 185 How the DOM Really Works
-
+// lesson 186 Selecting, Creating, and Deleting Elements
 
 
 
