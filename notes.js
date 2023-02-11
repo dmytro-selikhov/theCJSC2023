@@ -1198,8 +1198,9 @@ console.log(z === window.z);
 // lesson 186 Selecting, Creating, and Deleting Elements
 // lesson 187 Styles, Attributes and Classes
 // lesson 188 Implementing Smooth Scrolling
-// lesson 189 Types of Events and Event Handlers 
-
+// lesson 189 Types of Events and Event Handlers
+// lesson 190 Event Propagation_ Bubbling and Capturing
+// lesson 191 Event Propagation in Practice
 
 
 
