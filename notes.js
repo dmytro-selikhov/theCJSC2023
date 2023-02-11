@@ -869,6 +869,9 @@
 
 
 // lesson 60 Debugging (Fixing Errors)
+
+
+/*
 // lesson 61 Debugging with the Console and Breakpoints
 
 const measureKelvin = function () {
@@ -982,7 +985,7 @@ const printForecast = function (arr) {
 }
 
 printForecast(data1);
-
+*/
 
 
 // lesson 63 Section Intro
@@ -1017,6 +1020,8 @@ printForecast(data1);
 
 // lesson 90 The JavaScript Engine and Runtime
 // lesson 91 Execution Contexts and The Call Stack 
+
+/*
 // lesson 92 Scope and The Scope Chain
 
 // Scope Types:
@@ -1098,7 +1103,7 @@ const z = 3;
 console.log(x === window.x);
 console.log(y === window.y);
 console.log(z === window.z);
-
+*/
 
 // lesson 96 The this Keyword
 // lesson 97 The this Keyword in Practice
@@ -1193,7 +1198,7 @@ console.log(z === window.z);
 // lesson 186 Selecting, Creating, and Deleting Elements
 // lesson 187 Styles, Attributes and Classes
 // lesson 188 Implementing Smooth Scrolling
-
+// lesson 189 Types of Events and Event Handlers 
 
 
 
