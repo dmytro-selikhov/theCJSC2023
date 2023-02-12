@@ -1201,7 +1201,8 @@ console.log(z === window.z);
 // lesson 189 Types of Events and Event Handlers
 // lesson 190 Event Propagation_ Bubbling and Capturing
 // lesson 191 Event Propagation in Practice
-
+// lesson 192 Event Delegation_ Implementing Page Navigation
+// lesson 193 DOM Traversing
 
 
 
