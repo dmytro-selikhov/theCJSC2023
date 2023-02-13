@@ -34,7 +34,7 @@ document.addEventListener('keydown', function (e) {
 
 ///////////////////////////////////////////////////////////////
 // Button Scrolling 
-btnScrollTo.addEventListener('click', function(e){
+btnScrollTo.addEventListener('click', function (e) {
   // e.preventDefault();
 
   const s1coords = section1.getBoundingClientRect();
@@ -59,18 +59,18 @@ btnScrollTo.addEventListener('click', function(e){
   // });
 
   // Modern way
-  section1.scrollIntoView({behavior: 'smooth',});
+  section1.scrollIntoView({ behavior: 'smooth', });
 });
 
 
 
 ///////////////////////////////////////////////////////////////
 // Page Navigation
- 
+
 // document.querySelectorAll('.nav__link').forEach(function(el){
 //   el.addEventListener('click', function(e){
 //     e.preventDefault();
-    
+
 //     const id = this.getAttribute('href');
 //     console.log(id);
 //     document.querySelector(id).scrollIntoView({behavior: 'smooth',});
@@ -82,16 +82,21 @@ btnScrollTo.addEventListener('click', function(e){
 // 1. Add event listener to common parent element 
 // 2. Determine what element originated the event
 
-document.querySelector('.nav__links').addEventListener('click', function(e){
+document.querySelector('.nav__links').addEventListener('click', function (e) {
   e.preventDefault();
 
   // Matching strategy
-  if (e.target.classList.contains('nav__link')){
+  if (e.target.classList.contains('nav__link')) {
 
     const id = e.target.getAttribute('href');
-    document.querySelector(id).scrollIntoView({behavior: 'smooth',});
+    document.querySelector(id).scrollIntoView({ behavior: 'smooth', });
   }
 });
+
+
+// Tabbed Component
+const tabs = document.querySelectorAll('operations__tab')
+
 
 
 ///////////////////////////////////////////////////////////////
@@ -241,12 +246,12 @@ document.querySelector('.nav').addEventListener('click', function(e){
 });
 
 */
-
+/*
 const h1 = document.querySelector('h1');
 
 // Going downwards: child
 console.log(h1.querySelectorAll('.highlight'))
-console.log(h1.childNodes); 
+console.log(h1.childNodes);
 console.log(h1.children); // works only for direct children
 h1.firstElementChild.style.color = 'white';
 h1.lastElementChild.style.color = 'yellow';
@@ -267,9 +272,43 @@ console.log(h1.previousSibling);
 console.log(h1.nextSibling);
 
 console.log(h1.parentElement.children);
-[...h1.parentElement.children].forEach(function(el){
+[...h1.parentElement.children].forEach(function (el) {
   if (el !== h1) el.style.transform = 'scale(0.5)';
 });
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
