@@ -63,7 +63,7 @@
 
 
 
-// // Assignment operators  
+// // Assignment operators
 
 // let x = 10 + 5; // 15
 // x += 10; // x = x + 10 = 25
@@ -114,8 +114,8 @@
 // multiplen \n\
 // lines');
 
-// console.log(`String with 
-// multiplen 
+// console.log(`String with
+// multiplen
 // lines`);
 
 // // lesson 18
@@ -342,7 +342,7 @@
 // if (passTest) hasDriversLicense = true;
 // if (hasDriversLicense) console.log(`I can drive :D`);
 
-// // lesson 33 Functions 
+// // lesson 33 Functions
 
 // function logger() {
 //   console.log(`My name is Dima`);
@@ -495,7 +495,7 @@
 // const friends = ['Michael', 'Steven', 'Peter'];
 
 // // Add Elements To Array
-// const newLenght = friends.push('Jay'); // Retern array lenght 
+// const newLenght = friends.push('Jay'); // Retern array lenght
 // console.log(friends);
 // console.log(newLenght);
 
@@ -803,7 +803,7 @@
 // // - How to ignore errors?
 // // - Find max value in temp array
 // // - Find min value in temp array
-// // - Subtract min and max(amplitude) and return it 
+// // - Subtract min and max(amplitude) and return it
 
 // const temperatures = [3, -2, -6, -1, 'error', 9, 13, 17, 15, 14, 9, 5];
 
@@ -834,10 +834,10 @@
 // // Problem 2:
 // // 1. Understanding the problem
 // // Function should now recive 2 arrays of temps
-// // - With 2 arrays , should we implement functiontion twice? NO! Just merge two arrays 
+// // - With 2 arrays , should we implement functiontion twice? NO! Just merge two arrays
 
 // // 2. Breaking up into sub-problems
-// // - How to merge 2 arrays? 
+// // - How to merge 2 arrays?
 
 // const temperatures = [3, -2, -6, -1, 'error', 9, 13, 17, 15, 14, 9, 5];
 
@@ -939,7 +939,7 @@ console.log(amplitudeBug);
 // § Data2:[12,5,-5,0,4]
 
 // Solution
-// 
+//
 
 const printForecast = (arr) => {
   let str = '';
@@ -962,8 +962,8 @@ console.log(printForecast([12, 5, -5, 0, 4]));
 // - Array transformed to string, separated by ...
 // - What is the X days? Answer: index + 1
 
-// 2. Breaking up into sub-problems 
-// - Transform array into string 
+// 2. Breaking up into sub-problems
+// - Transform array into string
 // - Transform each element to string with ºC
 // - Strinds needs to contain day (index + 1)
 // - Add ... between elements and start and end of string
@@ -1019,7 +1019,7 @@ printForecast(data1);
 // JavaScript is Hight - level, object-oriented, multi-paradigm programming language.
 
 // lesson 90 The JavaScript Engine and Runtime
-// lesson 91 Execution Contexts and The Call Stack 
+// lesson 91 Execution Contexts and The Call Stack
 
 /*
 // lesson 92 Scope and The Scope Chain
@@ -1069,7 +1069,7 @@ let job = 'System Administrator';
 const year = 1991;
 
 
-// Functions 
+// Functions
 console.log(addDecl(2, 3));
 // console.log(addExpr(2, 3));
 // console.log(addArrow(2, 3));
@@ -1204,7 +1204,7 @@ console.log(z === window.z);
 // lesson 192 Event Delegation_ Implementing Page Navigation
 // lesson 193 DOM Traversing
 // lesson 194 Building a Tabbed Component
-
+// test text
 
 
 
