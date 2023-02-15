@@ -1204,7 +1204,7 @@ console.log(z === window.z);
 // lesson 192 Event Delegation_ Implementing Page Navigation
 // lesson 193 DOM Traversing
 // lesson 194 Building a Tabbed Component
-// test text
+// test text in progress
 
 
 
