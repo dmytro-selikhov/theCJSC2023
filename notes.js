@@ -1205,8 +1205,7 @@ console.log(z === window.z);
 // lesson 193 DOM Traversing
 // lesson 194 Building a Tabbed Component
 // lesson 195 Passing Arguments to Event Handlers
-// test text
-
+// lesson 196 Implementing a Sticky Navigation_ The Scroll Event
 
 
 
