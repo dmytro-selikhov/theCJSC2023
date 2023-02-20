@@ -1209,7 +1209,7 @@ console.log(z === window.z);
 // lesson 197 A Better Way_ The Intersection Observer API
 // lesson 198 Revealing Elements on Scroll
 // lesson 199 Lazy Loading Images
-// test text
+// test text in progress
 
 
 
