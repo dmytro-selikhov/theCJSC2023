@@ -1210,7 +1210,7 @@ console.log(z === window.z);
 // lesson 198 Revealing Elements on Scroll
 // lesson 199 Lazy Loading Images
 // test text in progress part 3
-
+// Linux today
 
 
 
