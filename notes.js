@@ -1209,13 +1209,7 @@ console.log(z === window.z);
 // lesson 197 A Better Way_ The Intersection Observer API
 // lesson 198 Revealing Elements on Scroll
 // lesson 199 Lazy Loading Images
-// test text in progress part 3
-// Linux today
-// Linux today
-// Linux today
-// Linux today
-// Linux today
-// Linux today
+// lesson 200 Building a Slider Component: Part 1
 // Linux today
 
 
