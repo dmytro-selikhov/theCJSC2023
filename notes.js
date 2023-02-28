@@ -1210,8 +1210,7 @@ console.log(z === window.z);
 // lesson 198 Revealing Elements on Scroll
 // lesson 199 Lazy Loading Images
 // lesson 200 Building a Slider Component: Part 1
-// Linux today
-
+// lesson 201 Building a Slider Component_ Part 2
 
 
 
