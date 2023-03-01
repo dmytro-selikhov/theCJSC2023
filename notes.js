@@ -1211,7 +1211,7 @@ console.log(z === window.z);
 // lesson 199 Lazy Loading Images
 // lesson 200 Building a Slider Component: Part 1
 // lesson 201 Building a Slider Component_ Part 2
-
+// lesson 202 Lifecycle DOM Events
 
 
 
