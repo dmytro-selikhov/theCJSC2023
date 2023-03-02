@@ -226,7 +226,7 @@ allSections.forEach(function (section) {
 
 // Lazy loading images 
 const imgTargets = document.querySelectorAll('img[data-src]');
-console.log(imgTargets);
+// console.log(imgTargets);
 
 const loadImage = function (entries, observer) {
   const [entry] = entries;
@@ -277,7 +277,19 @@ const slider = function () {
     document.querySelectorAll('.dots__dot').forEach(dot => dot.classList.remove('dots__dot--active'));
 
     document.querySelector(`.dots__dot[data-slide="${slide}"]`).classList.add('dots__dot--active');
+
+
+
+    // document
+    //   .querySelectorAll('.dots__dot')
+    //   .forEach(dot => dot.classList.remove('dots__dot--active'));
+
+    // document
+    //   .querySelector(`.dots__dot[data-slide="${slide}"]`)
+    //   .classList.add('dots__dot--active');
+
   };
+
 
   const goToSlide = function (slide) {
 
@@ -309,8 +321,9 @@ const slider = function () {
 
   const init = function () {
     goToSlide(0);
-    activateDot(0);
     createDots();
+
+    activateDot(0);
   };
   init();
 
@@ -516,9 +529,19 @@ console.log(h1.parentElement.children);
 
 */
 
+document.addEventListener('DOMContentLoaded', function (e) {
+  console.log('HTML parsed and DOM tree built!', e);
+});
 
+window.addEventListener('load', function (e) {
+  console.log('Page fully loaded', e);
+})
 
-
+// window.addEventListener('beforeunload', function (e) {
+//   e.preventDefault();
+//   console.log(e);
+//   e.returnValue = '';
+// });
 
 
 
