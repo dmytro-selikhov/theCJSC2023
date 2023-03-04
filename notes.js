@@ -1213,7 +1213,7 @@ console.log(z === window.z);
 // lesson 201 Building a Slider Component_ Part 2
 // lesson 202 Lifecycle DOM Events
 // lesson 203 Efficient Script Loading: defer and async
-// Linux today
+// lesson 204 Section Intro
 
 
 
