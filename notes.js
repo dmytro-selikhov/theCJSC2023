@@ -1212,6 +1212,7 @@ console.log(z === window.z);
 // lesson 200 Building a Slider Component: Part 1
 // lesson 201 Building a Slider Component_ Part 2
 // lesson 202 Lifecycle DOM Events
+// lesson 203 Efficient Script Loading_ defer and async
 
 
 
