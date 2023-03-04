@@ -1214,6 +1214,9 @@ console.log(z === window.z);
 // lesson 202 Lifecycle DOM Events
 // lesson 203 Efficient Script Loading: defer and async
 // lesson 204 Section Intro
+// lesson 205 Section Roadmap
+// lesson 206 What is Object-Oriented Programming_
+// lesson 207 OOP in JavaScript
 
 
 
