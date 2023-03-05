@@ -1219,6 +1219,7 @@ console.log(z === window.z);
 // lesson 207 OOP in JavaScript
 // lesson 208 Constructor Functions and the new Operator
 // lesson 209 Prototypes
+// lesson 210 Prototypal Inheritance and The Prototype Chain
 
 
 

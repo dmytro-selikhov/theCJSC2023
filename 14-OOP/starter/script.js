@@ -29,3 +29,37 @@ const jay = 'Jay';
 
 console.log(dima instanceof Person);
 console.log(jay instanceof Person);
+
+
+////////////////////////////////////////
+// Prototypes
+console.log(Person.prototype);
+
+Person.prototype.calcAge = function(){
+		console.log(2037 - this.birthYear);
+}
+
+dima.calcAge();
+ksu.calcAge();
+pavlo.calcAge();
+
+console.log(dima.__proto__);
+console.log(dima.__proto__ === Person.prototype);
+
+console.log(Person.prototype.isPrototypeOf(dima));
+console.log(Person.prototype.isPrototypeOf(ksu));
+console.log(Person.prototype.isPrototypeOf(pavlo));
+console.log(Person.prototype.isPrototypeOf(Person));
+
+// .prototypeOfLinkedObjects
+
+Person.prototype.species = 'Homo Sapiens';
+console.log(dima.species, ksu.species, pavlo.species);
+
+console.log(dima.hasOwnProperty('firstName'));
+console.log(dima.hasOwnProperty('species'));
+
+
+
+
+
