@@ -1220,7 +1220,7 @@ console.log(z === window.z);
 // lesson 208 Constructor Functions and the new Operator
 // lesson 209 Prototypes
 // lesson 210 Prototypal Inheritance and The Prototype Chain
-// linux today
+// lesson 211 Prototypal Inheritance on Built-In Objects
 
 
 
