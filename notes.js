@@ -1222,6 +1222,7 @@ console.log(z === window.z);
 // lesson 210 Prototypal Inheritance and The Prototype Chain
 // lesson 211 Prototypal Inheritance on Built-In Objects
 // lesson 212 Coding Challenge #1
+// lesson 213 ES6 Classes
 
 
 
