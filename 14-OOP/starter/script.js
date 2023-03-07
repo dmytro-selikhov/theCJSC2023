@@ -226,13 +226,12 @@ console.log(jessica.__proto__ === PersonCl.prototype);
 // }
 
 jessica.greet();
-
 PersonCl.hey();
 // 1. Classes are NOT hoisted
 // 2. Classes are first-class citizes
 // 3. Classes are executed in strict mode 
 
-
+/*
 const account = {
 	owner: 'Jonas',
 	movements: [200, 530, 120, 300],
@@ -248,10 +247,39 @@ const account = {
 };
 
 console.log(account.latest);
-
 account.latest = 500;
-
 console.log(account.movements);
+*/
+////////////////////////////////
+// Object.create
+
+const PersonProto = {
+	calcAge() {
+		console.log(2037 - this.birthYear);
+	},
+
+	init(firstName,birthYear){
+		this.firstName = firstName;
+		this.birthYear = birthYear;
+	},
+};
+
+const steven = Object.create(PersonProto);
+console.log(steven);
+steven.name = 'Steven';
+steven.birthYear = 2002;
+steven.calcAge();
+
+console.log(steven.__proto__ === PersonProto);
+
+const sarah = Object.create(PersonProto);
+sarah.init('Sarah', 1979);
+sarah.calcAge();
+
+
+
+
+
 
 
 

@@ -1226,6 +1226,7 @@ console.log(z === window.z);
 // lesson 214 Setters and Getters
 // lesson 215 Static Methods
 // lesson 216 Object.create
+// lesson 217 Coding Challenge #2
 
 
 
