@@ -30,6 +30,12 @@ const jay = 'Jay';
 console.log(dima instanceof Person);
 console.log(jay instanceof Person);
 
+Person.hey = function(){
+	console.log(`Hey, there :D`);
+	console.log(this);
+}
+
+Person.hey();
 
 ////////////////////////////////////////
 // Prototypes
@@ -173,6 +179,7 @@ class PersonCl {
 		this.birthYear = birthYear;
 	}
 
+	// Instance methods
 	// Methods will be added to .prototype property
 	calcAge() { // prototype of the object, not prototype of constructor
 		console.log(2037 - this.birthYear);
@@ -196,6 +203,13 @@ class PersonCl {
 	get fullName() {
 		return this._fullName;
 	}
+
+	// Static method
+	static hey(){
+		console.log(`Hey, there :D`);
+		console.log(this);
+	}
+
 };
 
 const jessica = new PersonCl('Jessica Davis', 1996);
@@ -213,6 +227,7 @@ console.log(jessica.__proto__ === PersonCl.prototype);
 
 jessica.greet();
 
+PersonCl.hey();
 // 1. Classes are NOT hoisted
 // 2. Classes are first-class citizes
 // 3. Classes are executed in strict mode 

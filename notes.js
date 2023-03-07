@@ -1225,6 +1225,7 @@ console.log(z === window.z);
 // lesson 213 ES6 Classes
 // lesson 214 Setters and Getters
 // lesson 215 Static Methods
+// lesson 216 Object.create
 
 
 
