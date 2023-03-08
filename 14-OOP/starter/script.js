@@ -1,5 +1,7 @@
 'use strict';
 
+
+/*
 const Person = function (firstName, birthYear){
 	// Instance properties
 	this.firstName = firstName;
@@ -87,6 +89,11 @@ console.log(arr.unique());
 const h1 = document.querySelector('h1');
 console.dir(x => x +1);
 
+*/
+
+
+
+
 ///////////////////////////////////////
 // Coding Challenge #1
 
@@ -166,6 +173,8 @@ mercedes.accelerate();
 mercedes.brake();
 */
 
+
+/*
 /////////////////////////////
 // lesson 213 ES6 Classes
 
@@ -231,6 +240,8 @@ PersonCl.hey();
 // 2. Classes are first-class citizes
 // 3. Classes are executed in strict mode 
 
+*/
+
 /*
 const account = {
 	owner: 'Jonas',
@@ -250,6 +261,8 @@ console.log(account.latest);
 account.latest = 500;
 console.log(account.movements);
 */
+
+/*
 ////////////////////////////////
 // Object.create
 
@@ -275,7 +288,7 @@ console.log(steven.__proto__ === PersonProto);
 const sarah = Object.create(PersonProto);
 sarah.init('Sarah', 1979);
 sarah.calcAge();
-
+*/
 
 
 ///////////////////////////////////////
@@ -292,6 +305,7 @@ DATA CAR 1: 'Ford' going at 120 km/h
 GOOD LUCK 😀
 */
 
+/*
 // Solution
 
 class CarN  {
@@ -365,6 +379,63 @@ ford2.accelerate();
 ford2.brake();
 ford2.speedUS = 50; // set speedUS(speed)
 console.log(ford2);
+*/
+
+
+////////////////////////////////////////////////////
+// Inheritance Between _Classes__ Constructor Functions
+
+
+const Person = function (firstName, birthYear){
+	this.firstName = firstName;
+	this.birthYear = birthYear;
+};
+
+Person.prototype.calcAge = function(){
+	console.log(2037 - this.birthYear);
+}
+
+const Student = function(firstName, birthYear, course){
+	Person.call(this, firstName, birthYear);
+	this.course = course;
+};
+
+// Linking prototypes
+Student.prototype = Object.create(Person.prototype);
+
+Student.prototype.introduce = function(){
+	console.log(`My name is ${this.firstName} and I study ${this.course}`);
+}
+
+const mike = new Student('Mike', 2020, 'Computer Science');
+mike.introduce();
+mike.calcAge();
+
+console.log(mike.__proto__);
+console.log(mike.__proto__.__proto__);
+
+console.log(mike instanceof Student);
+console.log(mike instanceof Person);
+console.log(mike instanceof Object);
+
+Student.prototype.constructor = Student;
+console.dir(Student.prototype.constructor);
+
+
+///////////////////////////////////////////////////////
+// Coding Challenge #3
+/* 
+1. Use a constructor function to implement an Electric Car (called EV) as a CHILD "class" of Car. Besides a make and current speed, the EV also has the current battery charge in % ('charge' property);
+2. Implement a 'chargeBattery' method which takes an argument 'chargeTo' and sets the battery charge to 'chargeTo';
+3. Implement an 'accelerate' method that will increase the car's speed by 20, and decrease the charge by 1%. Then log a message like this: 'Tesla going at 140 km/h, with a charge of 22%';
+4. Create an electric car object and experiment with calling 'accelerate', 'brake' and 'chargeBattery' (charge to 90%). Notice what happens when you 'accelerate'! HINT: Review the definiton of polymorphism 😉
+
+DATA CAR 1: 'Tesla' going at 120 km/h, with a charge of 23%
+
+GOOD LUCK 😀
+*/
+
+
 
 
 
