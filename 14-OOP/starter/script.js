@@ -381,10 +381,9 @@ ford2.speedUS = 50; // set speedUS(speed)
 console.log(ford2);
 */
 
-
+/*
 ////////////////////////////////////////////////////
 // Inheritance Between _Classes__ Constructor Functions
-
 
 const Person = function (firstName, birthYear){
 	this.firstName = firstName;
@@ -421,6 +420,10 @@ console.log(mike instanceof Object);
 Student.prototype.constructor = Student;
 console.dir(Student.prototype.constructor);
 
+*/
+
+
+
 
 ///////////////////////////////////////////////////////
 // Coding Challenge #3
@@ -434,6 +437,131 @@ DATA CAR 1: 'Tesla' going at 120 km/h, with a charge of 23%
 
 GOOD LUCK 😀
 */
+
+/*
+// Solution
+const Car = function (carName, carSpeed){
+	// Instance properties
+	this.carName = carName;
+	this.carSpeed = carSpeed;
+
+};
+
+const EV = function(carName, carSpeed, chargeTo){
+	Car.call(this, carName, carSpeed);
+	this.chargeTo = chargeTo;
+};
+
+// Linking prototypes
+EV.prototype = Object.create(Car.prototype);
+
+Car.prototype.accelerate = function(){
+		this.carSpeed = this.carSpeed + 20;
+		this.chargeTo -= 1;
+		console.log(`${this.carName} going at ${this.carSpeed} km/h, with a charge of ${this.chargeTo}%`);
+}
+
+Car.prototype.brake = function(){
+		this.carSpeed = this.carSpeed - 5;
+		console.log(this.carName, this.carSpeed);
+}
+
+EV.prototype.chargeBattery = function(chargeTo){
+	return this.chargeTo = chargeTo;
+
+};
+
+const tesla = new EV('Tesla', 120, 23);
+tesla.accelerate();
+tesla.accelerate();
+// tesla.brake();
+console.log(tesla.chargeBattery(40));
+*/
+
+/*
+///////////////////////////////
+// Mentors Solution
+const Car = function (make, speed){
+	// Instance properties
+	this.make = make;
+	this.speed = speed;
+};
+
+
+Car.prototype.accelerate = function(){
+		this.speed += 10;
+		console.log(`${this.make} is going at ${this.speed} km/h`);
+}
+
+Car.prototype.brake = function(){
+	this.speed -= 5;
+		console.log(`${this.make} is going at ${this.speed} km/h`);
+}
+
+
+const EV = function(make, speed, charge){
+	Car.call(this, make, speed)
+	this.charge = charge;
+}
+
+
+// Link the prototypes 
+EV.prototype = Object.create(Car.prototype);
+
+
+EV.prototype.chargeBattery = function(chargeTo){
+	 this.charge = chargeTo;
+};
+
+EV.prototype.accelerate = function() {
+	this.speed += 20;
+	this.charge--;
+	console.log(`${this.make} going at ${this.speed} km/h, with a charge of ${this.charge}%`);
+}
+
+const tesla = new EV('Tesla', 120, 23);
+tesla.chargeBattery(90);
+console.log(tesla);
+tesla.brake();
+tesla.accelerate();
+tesla.accelerate();
+tesla.accelerate();
+tesla.accelerate();
+tesla.brake();
+tesla.brake();
+*/
+
+
+///////////////////////////////////////
+// Inheritance Between _Classes__ ES6 Classes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

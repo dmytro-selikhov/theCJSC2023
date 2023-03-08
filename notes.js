@@ -1229,6 +1229,7 @@ console.log(z === window.z);
 // lesson 217 Coding Challenge #2
 // lesson 218 Inheritance Between _Classes__ Constructor Functions
 // lesson 219 Coding Challenge #3
+// Lesson 220 Inheritance Between _Classes__ ES6 Classes
 
 
 
