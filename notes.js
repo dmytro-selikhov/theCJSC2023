@@ -1232,7 +1232,7 @@ console.log(z === window.z);
 // Lesson 220 Inheritance Between _Classes__ ES6 Classes
 // lesson 221 Inheritance Between _Classes__ Object.create
 // lesson 222 Another Class Example
-
+// lesson 223 Encapsulation_ Protected Properties and Methods
 
 
 
