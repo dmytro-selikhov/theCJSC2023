@@ -1230,8 +1230,7 @@ console.log(z === window.z);
 // lesson 218 Inheritance Between _Classes__ Constructor Functions
 // lesson 219 Coding Challenge #3
 // Lesson 220 Inheritance Between _Classes__ ES6 Classes
-// Linux today 
-
+// lesson 221 Inheritance Between _Classes__ Object.create
 
 
 
