@@ -1234,7 +1234,8 @@ console.log(z === window.z);
 // lesson 222 Another Class Example
 // lesson 223 Encapsulation_ Protected Properties and Methods
 // lesson 224 Encapsulation_ Private Class Fields and Methods
-// lesson 225 Chaining Methods
+// lesson 225 Chaining Methods 
+// lesson 226 ES6 Classes Summary
 
 
 
