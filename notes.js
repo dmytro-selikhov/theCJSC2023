@@ -1237,6 +1237,9 @@ console.log(z === window.z);
 // lesson 225 Chaining Methods 
 // lesson 226 ES6 Classes Summary
 // lesson 227 Coding Challenge #4
+// lesson 228 Section Intro
+// lesson 229 Section Roadmap
+// lesson 230 Project Overview
 
 
 
