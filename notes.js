@@ -1236,6 +1236,7 @@ console.log(z === window.z);
 // lesson 224 Encapsulation_ Private Class Fields and Methods
 // lesson 225 Chaining Methods 
 // lesson 226 ES6 Classes Summary
+// lesson 227 Coding Challenge #4
 
 
 
