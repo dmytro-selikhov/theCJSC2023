@@ -1233,9 +1233,8 @@ console.log(z === window.z);
 // lesson 221 Inheritance Between _Classes__ Object.create
 // lesson 222 Another Class Example
 // lesson 223 Encapsulation_ Protected Properties and Methods
-// Linux today
-
-
+// lesson 224 Encapsulation_ Private Class Fields and Methods
+// lesson 225 Chaining Methods
 
 
 
