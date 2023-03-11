@@ -1240,6 +1240,7 @@ console.log(z === window.z);
 // lesson 228 Section Intro
 // lesson 229 Section Roadmap
 // lesson 230 Project Overview
+// lesson 231 How to Plan a Web Project
 
 
 
