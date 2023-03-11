@@ -1242,6 +1242,7 @@ console.log(z === window.z);
 // lesson 230 Project Overview
 // lesson 231 How to Plan a Web Project
 // lesson 232 Using the Geolocation API
+// lesson 233 Displaying a Map Using Leaflet Library
 
 
 
