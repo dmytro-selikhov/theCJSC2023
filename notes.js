@@ -1244,6 +1244,8 @@ console.log(z === window.z);
 // lesson 232 Using the Geolocation API
 // lesson 233 Displaying a Map Using Leaflet Library
 // lesson 234 Displaying a Map Marker
+// lesson 235 Rendering Workout Input Form
+// lesson 236 Project Architecture
 
 
 
