@@ -1246,6 +1246,7 @@ console.log(z === window.z);
 // lesson 234 Displaying a Map Marker
 // lesson 235 Rendering Workout Input Form
 // lesson 236 Project Architecture
+// lesson 237 Refactoring for Project Architecture
 
 
 
