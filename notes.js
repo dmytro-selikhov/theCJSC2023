@@ -1234,7 +1234,7 @@ console.log(z === window.z);
 // lesson 222 Another Class Example
 // lesson 223 Encapsulation_ Protected Properties and Methods
 // lesson 224 Encapsulation_ Private Class Fields and Methods
-// lesson 225 Chaining Methods 
+// lesson 225 Chaining Methods
 // lesson 226 ES6 Classes Summary
 // lesson 227 Coding Challenge #4
 // lesson 228 Section Intro
@@ -1247,7 +1247,7 @@ console.log(z === window.z);
 // lesson 235 Rendering Workout Input Form
 // lesson 236 Project Architecture
 // lesson 237 Refactoring for Project Architecture
-
+// linux today
 
 
 
