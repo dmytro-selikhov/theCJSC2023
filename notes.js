@@ -1247,8 +1247,7 @@ console.log(z === window.z);
 // lesson 235 Rendering Workout Input Form
 // lesson 236 Project Architecture
 // lesson 237 Refactoring for Project Architecture
-// linux today
-// linux today
+// in progress
 
 
 
