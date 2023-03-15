@@ -1247,7 +1247,7 @@ console.log(z === window.z);
 // lesson 235 Rendering Workout Input Form
 // lesson 236 Project Architecture
 // lesson 237 Refactoring for Project Architecture
-// in progress
+// lesson 238 Managing Workout Data_ Creating Classes
 
 
 
