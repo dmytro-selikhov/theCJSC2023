@@ -1250,6 +1250,7 @@ console.log(z === window.z);
 // lesson 238 Managing Workout Data_ Creating Classes
 // lesson 239 Creating a New Workout
 // lesson 240 Rendering Workouts
+// lesson 241 Move to Marker On Click
 
 
 
