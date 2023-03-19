@@ -1252,7 +1252,7 @@ console.log(z === window.z);
 // lesson 240 Rendering Workouts
 // lesson 241 Move to Marker On Click
 // lesson 242 Working with localStorage
-
+// lesson 243 Final Considerations
 
 
 
