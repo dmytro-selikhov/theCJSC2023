@@ -1253,7 +1253,9 @@ console.log(z === window.z);
 // lesson 241 Move to Marker On Click
 // lesson 242 Working with localStorage
 // lesson 243 Final Considerations
-
+// lesson 244 Section Intro
+// lesson 245 Section Roadmap
+// lesson 246 Asynchronous JavaScript, AJAX and APIs
 
 
 
