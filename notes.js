@@ -1258,6 +1258,7 @@ console.log(z === window.z);
 // lesson 246 Asynchronous JavaScript, AJAX and APIs
 // Linux today
 // Linux today
+// Linux today
 
 
 
