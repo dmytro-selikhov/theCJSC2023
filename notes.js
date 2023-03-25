@@ -1256,12 +1256,8 @@ console.log(z === window.z);
 // lesson 244 Section Intro
 // lesson 245 Section Roadmap
 // lesson 246 Asynchronous JavaScript, AJAX and APIs
-// Linux today
-// Linux today
-// Linux today
-// Linux today
-// Linux today
-// Linux today
+// lesson 247 IMPORTANT_ API URL Change
+// lesson 248 Our First AJAX Call_ XMLHttpRequest
 
 
 
