@@ -1258,6 +1258,7 @@ console.log(z === window.z);
 // lesson 246 Asynchronous JavaScript, AJAX and APIs
 // lesson 247 IMPORTANT_ API URL Change
 // lesson 248 Our First AJAX Call_ XMLHttpRequest
+// lesson 249 [OPTIONAL] How the Web Works_ Requests and Responses
 
 
 
