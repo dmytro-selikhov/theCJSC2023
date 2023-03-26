@@ -1260,7 +1260,7 @@ console.log(z === window.z);
 // lesson 248 Our First AJAX Call_ XMLHttpRequest
 // lesson 249 [OPTIONAL] How the Web Works_ Requests and Responses
 // lesson 250 Welcome to Callback Hell
-// Linux Today
+// lesson 251 Promises and the Fetch API
 
 
 
