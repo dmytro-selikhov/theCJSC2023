@@ -1263,6 +1263,7 @@ console.log(z === window.z);
 // lesson 251 Promises and the Fetch API
 // lesson 252 Consuming Promises
 // lesson 253 Chaining Promises
+// lesson 254 Handling Rejected Promises
 
 
 
