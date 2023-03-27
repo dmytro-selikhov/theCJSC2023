@@ -1262,6 +1262,7 @@ console.log(z === window.z);
 // lesson 250 Welcome to Callback Hell
 // lesson 251 Promises and the Fetch API
 // lesson 252 Consuming Promises
+// lesson 253 Chaining Promises
 
 
 
