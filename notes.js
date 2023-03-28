@@ -1264,7 +1264,7 @@ console.log(z === window.z);
 // lesson 252 Consuming Promises
 // lesson 253 Chaining Promises
 // lesson 254 Handling Rejected Promises
-
+// Linux today
 
 
 
