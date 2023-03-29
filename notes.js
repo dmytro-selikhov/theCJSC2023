@@ -1265,6 +1265,7 @@ console.log(z === window.z);
 // lesson 253 Chaining Promises
 // lesson 254 Handling Rejected Promises
 // lesson 255 Throwing Errors Manually
+// lesson 256 Coding Challenge #1
 
 
 
