@@ -1267,6 +1267,7 @@ console.log(z === window.z);
 // lesson 255 Throwing Errors Manually
 // lesson 256 Coding Challenge #1
 // Linux Today
+// Linux Today
 
 
 
