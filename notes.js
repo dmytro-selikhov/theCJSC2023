@@ -1269,7 +1269,7 @@ console.log(z === window.z);
 // lesson 257 Asynchronous Behind the Scenes_ The Event Loop
 // lesson 258 The Event Loop in Practice
 // lesson 259 Building a Simple Promise
-
+// lesson 260 Promisifying the Geolocation API
 
 
 
