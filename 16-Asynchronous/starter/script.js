@@ -238,7 +238,7 @@ const getCountryData = function(country) {
 
 
 btn.addEventListener('click', function(){
-	getCountryData('portugal');
+	// getCountryData('portugal');
 });
 
 // getCountryData('australia');
@@ -323,6 +323,10 @@ Promise.resolve('Resolved promise 2').then( res => {
 console.log('Test end');
 */
 
+
+
+
+/*
 /////////////////////////////////////////
 
  
@@ -355,4 +359,91 @@ wait(2).then(() => {
 
 Promise.resolve('abc').then(x => console.log(x));
 Promise.reject(new Error('Problem!')).catch(x => console.error(x));
+
+*/
+
+
+
+
+/*
+///////////////////////////////////////////////////
+
+
+const getPosition = function(){
+	return new Promise(function(resolve, reject){
+
+		// navigator.geolocation.getCurrentPosition(
+		// 	position => resolve(position), 
+		// 	err => reject(err)
+		// );
+		navigator.geolocation.getCurrentPosition(resolve, reject)
+	})
+};
+
+getPosition().then(pos => console.log(pos));
+
+
+const whereAmI = function(){
+	getPosition().then(pos => {
+		const {latitude: lat, longitude: lng} = pos.coords;
+	
+		return fetch(`https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${lat}&longitude=${lng}&localityLanguage=en`)
+	})	
+	.then(res => {
+		if (!res.ok) throw new Error(`Problem with service ${res.status}`);
+		return res.json()})
+	.then(data => {
+		// console.log(data);
+		console.log(`You are in ${data.city}, ${data.countryName} `);
+
+		return fetch(`https://restcountries.com/v2/name/${data.countryName}`)
+	})
+	.then(res => {
+		// console.log(res);
+
+		if(!res.ok)
+			throw new Error(`Country not found (${res.status})`)
+
+		return res.json();
+	})
+	.then(data => renderCountry(data[0]))
+	.catch(err => console.error(`${err.message} :(((`))
+	.finally(() => {
+		countriesContainer.style.opacity = 1;
+	});
+};
+
+
+btn.addEventListener('click', whereAmI);
+
+*/
+
+
+
+
+///////////////////////////////////////
+// Coding Challenge #2
+
+/* 
+Build the image loading functionality that I just showed you on the screen.
+
+Tasks are not super-descriptive this time, so that you can figure out some stuff on your own. Pretend you're working on your own 😉
+
+PART 1
+1. Create a function 'createImage' which receives imgPath as an input. This function returns a promise which creates a new image (use document.createElement('img')) and sets the .src attribute to the provided image path. When the image is done loading, append it to the DOM element with the 'images' class, and resolve the promise. The fulfilled value should be the image element itself. In case there is an error loading the image ('error' event), reject the promise.
+
+If this part is too tricky for you, just watch the first part of the solution.
+
+PART 2
+2. Comsume the promise using .then and also add an error handler;
+3. After the image has loaded, pause execution for 2 seconds using the wait function we created earlier;
+4. After the 2 seconds have passed, hide the current image (set display to 'none'), and load a second image (HINT: Use the image element returned by the createImage promise to hide the current image. You will need a global variable for that 😉);
+5. After the second image has loaded, pause execution for 2 seconds again;
+6. After the 2 seconds have passed, hide the current image.
+
+TEST DATA: Images in the img folder. Test the error handler by passing a wrong image path. Set the network speed to 'Fast 3G' in the dev tools Network tab, otherwise images load too fast.
+*/
+
+
+// Mentors Solution
 

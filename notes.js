@@ -1270,6 +1270,7 @@ console.log(z === window.z);
 // lesson 258 The Event Loop in Practice
 // lesson 259 Building a Simple Promise
 // lesson 260 Promisifying the Geolocation API
+// lesson 261 Coding Challenge #2
 
 
 
