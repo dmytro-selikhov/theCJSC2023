@@ -1272,6 +1272,7 @@ console.log(z === window.z);
 // lesson 260 Promisifying the Geolocation API
 // lesson 261 Coding Challenge #2
 // lesson 262 Consuming Promises with Async_Await
+// Linux today
 
 
 
