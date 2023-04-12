@@ -1274,23 +1274,6 @@ console.log(z === window.z);
 // lesson 262 Consuming Promises with Async_Await
 // Linux today
 // Linux today
-// Linux today
-// Linux today
-// Linux today
-// Linux today
-// Linux today
-// Linux today
-// Linux today
-// Linux today
-// Linux today
-// Linux today
-// Linux today
-// Linux today
-// Linux today
-// Linux today
-// Linux today
-// Linux today
-// Linux today
 
 
 
