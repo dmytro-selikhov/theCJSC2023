@@ -367,7 +367,7 @@ Promise.reject(new Error('Problem!')).catch(x => console.error(x));
 
 /*
 ///////////////////////////////////////////////////
-
+// Promisifying the Geolocation API
 
 const getPosition = function(){
 	return new Promise(function(resolve, reject){
@@ -496,10 +496,40 @@ createImage('img/img-1.jpg').then(img => {
 */
 
 //////////////////////////////////////////////
+// `https://restcountries.com/v2/name/${data.countryName}`
 
 
+const getPosition = function(){
+	return new Promise(function(resolve, reject){
+		navigator.geolocation.getCurrentPosition(resolve, reject)
+	})
+};
+
+getPosition().then(pos => console.log(pos));
 
 
+const whereAmI = async function() {
+	// Geolocation 
+	const pos = await getPosition();
+	const {latitude: lat, longitude: lng} = pos.coords;
+	// Reverse geocoding
+	const resGeo = await fetch(`https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${lat}&longitude=${lng}&localityLanguage=en`)
+	const dataGeo = await resGeo.json();
+	console.log(dataGeo);
+
+	// Country data
+	// Old Solution
+	// fetch(`https://restcountries.com/v2/name/${country}`).then( res => console.log(res));
+
+	// New Solution 
+	const res = await fetch(`https://restcountries.com/v2/name/${dataGeo.countryName}`);
+	const data = await res.json();
+	console.log(data);
+	renderCountry(data[0]);
+};
+
+whereAmI();
+console.log('FIRST');
 
 
 
