@@ -1274,18 +1274,32 @@ console.log(z === window.z);
 // lesson 262 Consuming Promises with Async_Await
 // lesson 263 Error Handling With try...catch
 // lesson 264 Returning Values from Async Functions
-// Linux today
-// Linux today
-// Linux today
-// Linux today
-// Linux today
-// Linux today
-// Linux today
-// Linux today
-// Linux today
-// Linux today
-// Linux today
-// Linux today
+// lesson 265 Running Promises in Parallel
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
