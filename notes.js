@@ -1275,7 +1275,7 @@ console.log(z === window.z);
 // lesson 263 Error Handling With try...catch
 // lesson 264 Returning Values from Async Functions
 // lesson 265 Running Promises in Parallel
-
+// lesson 266 Other Promise Combinators_ race, allSettled and any
 
 
 
