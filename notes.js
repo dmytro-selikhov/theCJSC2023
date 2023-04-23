@@ -1277,6 +1277,9 @@ console.log(z === window.z);
 // lesson 265 Running Promises in Parallel
 // lesson 266 Other Promise Combinators_ race, allSettled and any
 // lesson 267 Coding Challenge #3
+// lesson 268 Section Intro
+// lesson 269 Section Roadmap
+// lesson 270 An Overview of Modern JavaScript Development
 
 
 
