@@ -1283,7 +1283,7 @@ console.log(z === window.z);
 // lesson 271 An Overview of Modules in JavaScript
 // Linux today
 // Linux today
-
+// Linux today
 
 
 
