@@ -1281,23 +1281,9 @@ console.log(z === window.z);
 // lesson 269 Section Roadmap
 // lesson 270 An Overview of Modern JavaScript Development
 // lesson 271 An Overview of Modules in JavaScript
-// Linux today
-// Linux today
-// Linux today
-// Linux today
-// Linux today
-// Linux today
-// Linux today
-// Linux today
-// Linux today
-// Linux today
-// Linux today
-// Linux today
-// Linux today
-// Linux today
-// Linux today
-// Linux today
-// Linux today
+// IoT today
+// IoT today
+
 
 
 
