@@ -1282,7 +1282,8 @@ console.log(z === window.z);
 // lesson 270 An Overview of Modern JavaScript Development
 // lesson 271 An Overview of Modules in JavaScript
 // lesson 272 Exporting and Importing in ES6 Modules
-// lesson 273 Top-Level await (ES2022) 
+// lesson 273 Top-Level await (ES2022)
+// lesson 274 The Module Pattern.mp4 
 
 
 
