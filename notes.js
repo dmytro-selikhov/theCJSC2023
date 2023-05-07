@@ -1287,7 +1287,10 @@ console.log(z === window.z);
 // lesson 275 CommonJS Modules
 // lesson 276 A Brief Introduction to the Command Line
 // lesson 277 Introduction to NPM
-
+// lesson 278 Bundling With Parcel and NPM Scripts
+// lesson 279 Configuring Babel and Polyfilling
+// lasson 280 Review_ Writing Clean and Modern JavaScript
+// lesson 281 Let's Fix Some Bad Code_ Part 1
 
 
 
