@@ -1286,6 +1286,7 @@ console.log(z === window.z);
 // lesson 274 The Module Pattern
 // lesson 275 CommonJS Modules
 // lesson 276 A Brief Introduction to the Command Line
+// lesson 277 Introduction to NPM
 
 
 
