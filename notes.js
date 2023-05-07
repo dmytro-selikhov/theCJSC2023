@@ -1292,7 +1292,7 @@ console.log(z === window.z);
 // lasson 280 Review_ Writing Clean and Modern JavaScript
 // lesson 281 Let's Fix Some Bad Code_ Part 1
 // lesson 282 Declarative and Functional JavaScript Principles
-
+// lesson 283 Let's Fix Some Bad Code_ Part 2
 
 
 
