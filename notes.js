@@ -1293,6 +1293,8 @@ console.log(z === window.z);
 // lesson 281 Let's Fix Some Bad Code_ Part 1
 // lesson 282 Declarative and Functional JavaScript Principles
 // lesson 283 Let's Fix Some Bad Code_ Part 2
+// lesson 284. Section Intro
+// lesson 285. Section Roadmap
 
 
 
