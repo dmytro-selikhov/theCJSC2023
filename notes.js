@@ -1295,10 +1295,10 @@ console.log(z === window.z);
 // lesson 283 Let's Fix Some Bad Code_ Part 2
 // lesson 284. Section Intro
 // lesson 285. Section Roadmap
-// liux today
-// liux today
-
-
+// linux today
+// linux today
+// linux today
+// Linux today 
 
 
 
