@@ -1296,7 +1296,7 @@ console.log(z === window.z);
 // lesson 284 Section Intro
 // lesson 285 Section Roadmap
 // lesson 286 Project Overview and Planning (I)
-
+// lesson 287 Latest Code Updates (Parcel v2 and more)
 
 
 
