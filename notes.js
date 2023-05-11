@@ -1297,7 +1297,7 @@ console.log(z === window.z);
 // lesson 285 Section Roadmap
 // lesson 286 Project Overview and Planning (I)
 // lesson 287 Latest Code Updates (Parcel v2 and more)
-
+// lesson 288 Loading a Recipe from API
 
 
 
