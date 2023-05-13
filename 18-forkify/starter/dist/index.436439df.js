@@ -475,7 +475,7 @@ const controlRecipes = async function() {
         // 2) Rendering recipe
         _recipeViewJsDefault.default.render(_modelJs.state.recipe);
     } catch (err) {
-        console.log(err);
+        _recipeViewJsDefault.default.renderError();
     }
 };
 const init = function() {
@@ -16486,6 +16486,7 @@ const loadRecipe = async function(id) {
     } catch (err) {
         // Temp error handling
         console.error(`${err} :D`);
+        throw err;
     }
 };
 
@@ -16539,7 +16540,9 @@ console.log(_fractional.Fraction);
 class RecipeView {
     #parentElement = document.querySelector('.recipe');
     #data;
-    image;
+    #errorMessage = `We could not find that recipe. Please try another one!`;
+    #message = '';
+    // image
     render(data) {
         this.#data = data;
         const markup = this.#generateMarkup();
@@ -16549,11 +16552,16 @@ class RecipeView {
      #clear() {
         this.#parentElement.innerHTML = '';
     }
-    renderSpinner = function() {
+    renderSpinner() {
         const markup = `\n    <div class="spinner">\n     <svg>\n        <use href="${_iconsSvgDefault.default}#icon-loader"></use>\n      </svg>\n    </div>\n    `;
-        this.#parentElement.innerHTML = '';
+        this.#clear();
         this.#parentElement.insertAdjacentHTML('afterbegin', markup);
-    };
+    }
+    renderMessage(message = this.message) {
+        const markup = `\n        <div class="message">\n        <div>\n          <svg>\n            <use href="${_iconsSvgDefault.default}.svg#icon-smile"></use>\n          </svg>\n        </div>\n        <p>${message}</p>\n      </div>\n    `;
+        this.#clear();
+        this.#parentElement.insertAdjacentHTML('afterbegin', markup);
+    }
     addHandlerRender(handler) {
         const array1 = [
             'hashchange',
