@@ -1,2 +1,4 @@
-node_modules
-.parcel-cache
+node_modules/
+.parcel-cache/
+
+18-forkify/starter/.parcel-cache/data.mdb
