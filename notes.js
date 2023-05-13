@@ -1301,7 +1301,8 @@ console.log(z === window.z);
 // lesson 289 Rendering the Recipe
 // lesson 290 Listening For load and hashchange Events
 // lesson 291 The MVC Architecture
-
+// lesson 292 Refactoring for MVC
+// lesson 293 Helpers and Configuration Files
 
 
 
