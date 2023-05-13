@@ -1299,7 +1299,7 @@ console.log(z === window.z);
 // lesson 287 Latest Code Updates (Parcel v2 and more)
 // lesson 288 Loading a Recipe from API
 // lesson 289 Rendering the Recipe
-
+// lesson 290 Listening For load and hashchange Events
 
 
 
