@@ -1300,7 +1300,7 @@ console.log(z === window.z);
 // lesson 288 Loading a Recipe from API
 // lesson 289 Rendering the Recipe
 // lesson 290 Listening For load and hashchange Events
-
+// lesson 291 The MVC Architecture
 
 
 
