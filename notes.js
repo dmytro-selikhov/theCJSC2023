@@ -1303,7 +1303,7 @@ console.log(z === window.z);
 // lesson 291 The MVC Architecture
 // lesson 292 Refactoring for MVC
 // lesson 293 Helpers and Configuration Files
-
+// lesson 294 Event Handlers in MVC: Publisher-Subscriber Pattern
 
 
 
