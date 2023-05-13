@@ -1304,7 +1304,7 @@ console.log(z === window.z);
 // lesson 292 Refactoring for MVC
 // lesson 293 Helpers and Configuration Files
 // lesson 294 Event Handlers in MVC: Publisher-Subscriber Pattern
-
+// lesson 295 Implementing Error and Success Messages
 
 
 
