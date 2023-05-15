@@ -1306,7 +1306,7 @@ console.log(z === window.z);
 // lesson 294 Event Handlers in MVC: Publisher-Subscriber Pattern
 // lesson 295 Implementing Error and Success Messages
 // lesson 296 Implementing Search Results - Part 1
-
+// lesson 297 Implementing Search Results - Part 2
 
 
 
