@@ -1,9 +1,14 @@
 import * as model from './model.js';
 import recipeView from './veiws/recipeView.js';
 import searchView from './veiws/searchView.js';
+import resultsView from './veiws/resultsView.js';
 
 import 'core-js/stable';
 import 'regenerator-runtime';
+
+if (module.hot) {
+  module.hot.accept();
+}
 
 const controlRecipes = async function () {
   try {
@@ -24,6 +29,9 @@ const controlRecipes = async function () {
 
 const controlSearchResults = async function () {
   try {
+    resultsView.renderSpinner();
+    console.log(resultsView);
+
     // 1) Get search query 
     const query = searchView.getQuery();
     if (!query) return;
@@ -32,7 +40,7 @@ const controlSearchResults = async function () {
     await model.loadSerachRsults(query);
 
     // 3) Render results 
-    console.log(model.state.search.results);
+    resultsView.render(model.state.search.results);
   } catch (err) {
     console.log(err);
   }
