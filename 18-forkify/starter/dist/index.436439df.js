@@ -482,14 +482,14 @@ const controlRecipes = async function() {
 const controlSearchResults = async function() {
     try {
         _resultsViewJsDefault.default.renderSpinner();
-        console.log(_resultsViewJsDefault.default);
         // 1) Get search query 
         const query = _searchViewJsDefault.default.getQuery();
         if (!query) return;
         // 2) Load search results
         await _modelJs.loadSerachRsults(query);
         // 3) Render results 
-        _resultsViewJsDefault.default.render(_modelJs.state.search.results);
+        // resultsView.render(model.state.search.results);
+        _resultsViewJsDefault.default.render(_modelJs.getSearchResultsPage());
     } catch (err) {
         console.log(err);
     }
@@ -16480,6 +16480,8 @@ parcelHelpers.export(exports, "loadRecipe", ()=>loadRecipe
 );
 parcelHelpers.export(exports, "loadSerachRsults", ()=>loadSerachRsults
 );
+parcelHelpers.export(exports, "getSearchResultsPage", ()=>getSearchResultsPage
+);
 var _regeneratorRuntime = require("regenerator-runtime");
 var _configJs = require("./config.js");
 var _helpersJs = require("./helpers.js");
@@ -16488,7 +16490,9 @@ const state = {
     },
     search: {
         query: '',
-        results: []
+        results: [],
+        page: 1,
+        resultsPerPage: _configJs.RES_PER_PAGE
     }
 };
 const loadRecipe = async function(id) {
@@ -16530,7 +16534,12 @@ const loadSerachRsults = async function(query) {
         throw err;
     }
 };
-loadSerachRsults('pizza');
+const getSearchResultsPage = function(page = state.search.page) {
+    state.search.page = page;
+    const start = (page - 1) * state.search.resultsPerPage; // 0
+    const end = page * state.search.resultsPerPage; // 9
+    return state.search.results.slice(start, end);
+};
 
 },{"regenerator-runtime":"cH8Iq","@parcel/transformer-js/src/esmodule-helpers.js":"JacNc","./config.js":"beA2m","./helpers.js":"9l3Yy"}],"beA2m":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -16539,8 +16548,11 @@ parcelHelpers.export(exports, "API_URL", ()=>API_URL
 );
 parcelHelpers.export(exports, "TIMEOUT_SEC", ()=>TIMEOUT_SEC
 );
+parcelHelpers.export(exports, "RES_PER_PAGE", ()=>RES_PER_PAGE
+);
 const API_URL = 'https://forkify-api.herokuapp.com/api/v2/recipes/';
 const TIMEOUT_SEC = 10;
+const RES_PER_PAGE = 10;
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"JacNc"}],"9l3Yy":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -16609,6 +16621,7 @@ var _iconsSvgDefault = parcelHelpers.interopDefault(_iconsSvg);
 class View {
     _data;
     render(data) {
+        // if (!data) return this.renderError();
         if (!data || Array.isArray(data) && data.length === 0) return this.renderError();
         this._data = data;
         const markup = this._generateMarkup();
