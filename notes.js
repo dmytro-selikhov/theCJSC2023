@@ -1310,7 +1310,7 @@ console.log(z === window.z);
 // lesson 298 Implementing Pagination - Part 1
 // lesson 299 Implementing Pagination - Part 2
 // lesson 300 Project Planning II
-// test commit
+// lesson 301 Updating Recipe Servings
 
 
 
