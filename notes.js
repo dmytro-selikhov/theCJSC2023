@@ -1309,6 +1309,7 @@ console.log(z === window.z);
 // lesson 297 Implementing Search Results - Part 2
 // lesson 298 Implementing Pagination - Part 1
 // lesson 299 Implementing Pagination - Part 2
+// lesson 300 Project Planning II
 
 
 
