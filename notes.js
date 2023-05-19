@@ -1311,8 +1311,7 @@ console.log(z === window.z);
 // lesson 299 Implementing Pagination - Part 2
 // lesson 300 Project Planning II
 // lesson 301 Updating Recipe Servings
-// Wazuh today 
-// Wazuh today 
+// lesson 302 Developing a DOM Updating Algorithm
 
 
 
