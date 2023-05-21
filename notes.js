@@ -1314,6 +1314,7 @@ console.log(z === window.z);
 // lesson 302 Developing a DOM Updating Algorithm
 // lesson 303 Implementing Bookmarks - Part 1
 // lesson 304 Implementing Bookmarks - Part 2
+// lesson 305 Storing Bookmarks With localStorage
 
 
 

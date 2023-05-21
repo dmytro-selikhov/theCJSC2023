@@ -1,7 +1,7 @@
 import { async } from 'regenerator-runtime';
 import { API_URL, RES_PER_PAGE } from './config.js';
 import { getJSON } from './helpers.js'
-import recipeView from './veiws/recipeView.js';
+import recipeView from './views/recipeView.js';
 
 export const state = {
   recipe: {},
