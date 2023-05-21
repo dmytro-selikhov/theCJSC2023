@@ -1312,7 +1312,7 @@ console.log(z === window.z);
 // lesson 300 Project Planning II
 // lesson 301 Updating Recipe Servings
 // lesson 302 Developing a DOM Updating Algorithm
-// Linux today
+// lesson 303 Implementing Bookmarks - Part 1
 
 
 
