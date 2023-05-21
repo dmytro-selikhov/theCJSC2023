@@ -1313,7 +1313,7 @@ console.log(z === window.z);
 // lesson 301 Updating Recipe Servings
 // lesson 302 Developing a DOM Updating Algorithm
 // lesson 303 Implementing Bookmarks - Part 1
-
+// lesson 304 Implementing Bookmarks - Part 2
 
 
 
