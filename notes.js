@@ -1323,6 +1323,7 @@ console.log(z === window.z);
 // lesson 311 Section Intro
 // lesson 312 Section Roadmap
 // lesson 313 Simple Deployment With Netlify
+// lesson 314 Setting Up Git and GitHub
 
 
 
