@@ -1327,9 +1327,9 @@ console.log(z === window.z);
 // lesson 315 Git Fundamentals
 // lesson 316 Pushing to GitHub
 // lesson 317 Setting Up Continuous Integration With Netlify
-
-
-
+// lesson 318 Where to Go from Here
+// lesson 319 My Other Courses + Updates
+// lesson 320 Access the Old Course
 
 
 
