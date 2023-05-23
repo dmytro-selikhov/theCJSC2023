@@ -1320,8 +1320,9 @@ console.log(z === window.z);
 // lesson 308 Uploading a New Recipe - Part 2
 // lesson 309 Uploading a New Recipe - Part 3
 // lesson 310 Wrapping Up: Final Considerations
-
-
+// lesson 311 Section Intro
+// lesson 312 Section Roadmap
+// lesson 313 Simple Deployment With Netlify
 
 
 
