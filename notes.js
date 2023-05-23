@@ -1319,7 +1319,7 @@ console.log(z === window.z);
 // lesson 307 Uploading a New Recipe - Part 1
 // lesson 308 Uploading a New Recipe - Part 2
 // lesson 309 Uploading a New Recipe - Part 3
-
+// lesson 310 Wrapping Up: Final Considerations
 
 
 
